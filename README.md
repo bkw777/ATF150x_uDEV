@@ -9,15 +9,15 @@ There are 2 PCB versions, one for ATF1502 and one for ATF1504.
 The only difference is the silkscreen pin labels.
 
 ## ATF1502AS
-![](PCB/out/ATF1502AS-uDEV.jpg)
-![](PCB/out/ATF1502AS-uDEV.2.jpg)
-![](PCB/out/ATF1502AS-uDEV.top.jpg)
-![](PCB/out/ATF1502AS-uDEV.bot.jpg)
-![](PCB/out/ATF1502AS-uDEV.svg)
+![](PCB/out/ATF1502AS_uDEV.jpg)
+![](PCB/out/ATF1502AS_uDEV.2.jpg)
+![](PCB/out/ATF1502AS_uDEV.top.jpg)
+![](PCB/out/ATF1502AS_uDEV.bot.jpg)
+![](PCB/out/ATF1502AS_uDEV.svg)
 
 ## ATF1504AS
-![](PCB/out/ATF1504AS-uDEV.jpg)
-![](PCB/out/ATF1504AS-uDEV.2.jpg)
-![](PCB/out/ATF1504AS-uDEV.top.jpg)
-![](PCB/out/ATF1504AS-uDEV.bot.jpg)
-![](PCB/out/ATF1504AS-uDEV.svg)
+![](PCB/out/ATF1504AS_uDEV.jpg)
+![](PCB/out/ATF1504AS_uDEV.2.jpg)
+![](PCB/out/ATF1504AS_uDEV.top.jpg)
+![](PCB/out/ATF1504AS_uDEV.bot.jpg)
+![](PCB/out/ATF1504AS_uDEV.svg)
