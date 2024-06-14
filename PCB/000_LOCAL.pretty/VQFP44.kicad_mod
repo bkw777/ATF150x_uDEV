@@ -16,7 +16,7 @@
 		)
 	)
 	(property "Value" "VQFP44"
-		(at 0 -1.778 0)
+		(at 0 0 0)
 		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "1be56277-0209-4695-ae25-6a608228dc5f")
@@ -36,6 +36,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -48,6 +49,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -60,51 +62,22 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
 	(attr smd)
-	(fp_line
-		(start -5.08 -5.08)
-		(end -4.445 -5.08)
-		(stroke
-			(width 0.15)
-			(type default)
+	(fp_poly
+		(pts
+			(xy -5.75 -4.5) (xy -6.1 -5) (xy -5.4 -5)
 		)
-		(layer "F.SilkS")
-		(uuid "2a1012b7-f07e-4db5-961b-4d32f98521a0")
-	)
-	(fp_line
-		(start -5.08 -4.445)
-		(end -5.08 -5.08)
-		(stroke
-			(width 0.15)
-			(type default)
-		)
-		(layer "F.SilkS")
-		(uuid "c8f7bdc6-a224-4a64-8aa6-84012061d9d2")
-	)
-	(fp_rect
-		(start -5 -5)
-		(end 5 5)
 		(stroke
 			(width 0.1)
-			(type default)
-		)
-		(fill none)
-		(layer "F.SilkS")
-		(uuid "61b6dbf9-a881-45c6-a7d4-090ce2bf0ba0")
-	)
-	(fp_circle
-		(center -3.9878 -3.9878)
-		(end -3.5 -3.9878)
-		(stroke
-			(width 0.01)
 			(type solid)
 		)
 		(fill solid)
 		(layer "F.SilkS")
-		(uuid "ab9b5e01-aa8a-4eef-9c62-2a02ec92b455")
+		(uuid "7834b5b0-f45b-4031-92ab-c3f204ebd7ea")
 	)
 	(fp_line
 		(start -6.7 -6.7)
