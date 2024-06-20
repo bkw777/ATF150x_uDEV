@@ -15,14 +15,17 @@ Use 220n to 1u for C1-C4
 
 <!--
 ## Programming  
-Still a work in progress.
+Still a work in progress.  
+Some links to investigate further.  
 
-Perhaps this hardware: https://github.com/hackup/ATF2FT232HQ
+https://github.com/roscopeco/atfprog-tools
 
-Perhaps this software: https://snowgoons.ro/posts/2020-11-25-atf15xx-vhdl-development-for-cheap/
+https://github.com/hackup/ATF2FT232HQ
 
-Supposedly there is a way to use openocd too, but the openocd docs are confusing.  
-Need actual sample commands to start from...  
+https://snowgoons.ro/posts/2020-11-25-atf15xx-vhdl-development-for-cheap/
+
+openocd docs are confusing.  
+Need actual example commands to start from...  
 `openocd -c "adapter driver list"`
 
 -->
