@@ -1752,7 +1752,7 @@
 			)
 		)
 	)
-	(symbol "ATF150xASx-xAx44"
+	(symbol "ATF150x-xAx44"
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -1765,7 +1765,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ATF150xASx-xAx44"
+		(property "Value" "ATF150x-xAx44"
 			(at 1.27 24.892 0)
 			(effects
 				(font
@@ -1819,7 +1819,7 @@
 				(hide yes)
 			)
 		)
-		(symbol "ATF150xASx-xAx44_0_1"
+		(symbol "ATF150x-xAx44_0_1"
 			(rectangle
 				(start -12.7 22.86)
 				(end 12.7 -25.4)
@@ -1832,7 +1832,7 @@
 				)
 			)
 		)
-		(symbol "ATF150xASx-xAx44_1_1"
+		(symbol "ATF150x-xAx44_1_1"
 			(pin bidirectional line
 				(at -15.24 20.32 0)
 				(length 2.54)

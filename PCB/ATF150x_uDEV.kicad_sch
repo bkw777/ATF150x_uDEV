@@ -5,15 +5,15 @@
 	(uuid "59fc349f-54da-4a51-bb89-375ab443b404")
 	(paper "A4")
 	(title_block
-		(title "ATF150xAS_uDEV")
-		(date "2024-06-14")
-		(rev "003")
+		(title "ATF150x_uDEV")
+		(date "2024-06-23")
+		(rev "004")
 		(company "Brian K. White")
 		(comment 1 "CC-BY-SA")
 		(comment 2 "github.com/bkw777/ATF150x_uDEV")
 	)
 	(lib_symbols
-		(symbol "000_LOCAL:ATF150xASx-xAx44"
+		(symbol "000_LOCAL:ATF150x-xAx44"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -26,7 +26,7 @@
 					(justify left)
 				)
 			)
-			(property "Value" "ATF150xASx-xAx44"
+			(property "Value" "ATF150x-xAx44"
 				(at 1.27 24.892 0)
 				(effects
 					(font
@@ -80,7 +80,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "ATF150xASx-xAx44_0_1"
+			(symbol "ATF150x-xAx44_0_1"
 				(rectangle
 					(start -12.7 22.86)
 					(end 12.7 -25.4)
@@ -93,7 +93,7 @@
 					)
 				)
 			)
-			(symbol "ATF150xASx-xAx44_1_1"
+			(symbol "ATF150x-xAx44_1_1"
 				(pin bidirectional line
 					(at -15.24 20.32 0)
 					(length 2.54)
@@ -3356,13 +3356,14 @@
 		)
 		(uuid "fea7e7d6-026b-42e2-8aab-5ff39e4df868")
 	)
-	(text "AT1502AS\nAT1504AS"
+	(text "ATF1502 or ATF1504, TQFP44\n"
 		(exclude_from_sim no)
 		(at 139.7 50.8 0)
 		(effects
 			(font
 				(size 2.54 2.54)
 			)
+			(justify bottom)
 		)
 		(uuid "c85baf49-0574-402d-95e9-1b16ac1c47f8")
 	)
@@ -3410,7 +3411,7 @@
 		)
 		(uuid "0ccc7ae4-dff9-498b-adcb-e07cfc78011b")
 	)
-	(label "A8"
+	(label "6"
 		(at 124.46 78.74 180)
 		(fields_autoplaced yes)
 		(effects
@@ -5043,7 +5044,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "datasheets/JTAG-A.pdf"
 			(at 62.23 88.9 0)
 			(effects
 				(font
@@ -5497,17 +5498,16 @@
 		)
 	)
 	(symbol
-		(lib_id "000_LOCAL:ATF150xASx-xAx44")
+		(lib_id "000_LOCAL:ATF150x-xAx44")
 		(at 139.7 88.9 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "649e0aac-e3b7-4874-9e79-d90adf509411")
 		(property "Reference" "U1"
-			(at 141.8941 60.96 0)
+			(at 143.256 58.674 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5515,8 +5515,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "ATF150xASx-xAx44"
-			(at 141.8941 63.5 0)
+		(property "Value" "ATF150x-xAx44"
+			(at 143.51 60.706 0)
 			(effects
 				(font
 					(size 1.27 1.27)
