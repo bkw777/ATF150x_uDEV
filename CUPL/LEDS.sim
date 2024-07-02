@@ -1,0 +1,17 @@
+%SIGNAL
+PIN  21 =  IN 
+PIN  22 =  LED1 
+PIN  23 =  LED2 
+%END
+
+%FIELD
+%END
+
+%EQUATION
+LED1 =>
+    IN
+
+LED2 =>
+    !IN
+
+%END

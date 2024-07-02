@@ -1,0 +1,40 @@
+/*
+ * Minimal hello world for ATF150x_uDEV built-in LEDs.
+ * Touch pin 21 alternately to gnd or vcc and see leds flip-flop.
+ * https://github.com/bkw777/ATF150x_uDEV
+ */
+
+Name            leds;
+Partno          ;
+Revision        ;
+Date            ;
+Designer        Brian K. White;
+Company         ;
+Location        ;
+Assembly        ;
+Device          f1502isptqfp44; /* ATF1502 TQFP44 with JTAG pins kept enabled */
+
+PROPERTY ATMEL {TDI_PULLUP = ON};
+PROPERTY ATMEL {TMS_PULLUP = ON};
+
+/*
+ * Inputs:
+ */
+
+Pin 21 = IN;
+
+/*
+ * Outputs:
+ *
+ */
+
+Pin 22 = LED1;
+Pin 23 = LED2;
+
+/*
+ * Logic:
+ */
+
+LED1 = IN;
+LED2 = !IN;
+

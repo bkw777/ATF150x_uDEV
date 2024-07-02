@@ -113,7 +113,7 @@
 			(plotfptext yes)
 			(plotinvisibletext no)
 			(sketchpadsonfab no)
-			(subtractmaskfromsilk no)
+			(subtractmaskfromsilk yes)
 			(outputformat 1)
 			(mirror no)
 			(drillshape 0)
@@ -6999,7 +6999,7 @@
 		)
 		(fp_arc
 			(start 0.350001 -0.600001)
-			(mid 0.597488 -0.497487)
+			(mid 0.597488 -0.497488)
 			(end 0.700001 -0.25)
 			(stroke
 				(width 0.1)

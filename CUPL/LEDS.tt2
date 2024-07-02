@@ -1,0 +1,31 @@
+#$ TOOL CUPL
+# Berkeley PLA format generated using CUPL(WM) 5.0a
+# Serial#  60008009
+# Created  Sat Jun 29 12:59:31 2024
+#
+#    Name        leds
+#    Partno      
+#    Revision    
+#    Date        
+#    Designer    Brian K. White
+#    Company     
+#    Assembly    
+#    Location    
+#
+#$ TITLE  leds
+#$ PROPERTY ATMEL TDI_PULLUP = ON
+#$ PROPERTY ATMEL TMS_PULLUP = ON
+#$ MODULE  leds
+#$ JEDECFILE  leds
+#$ DEVICE  f1502isptqfp44
+#$ PINS   3 IN+:21 LED1+:22 LED2+:23 
+.i 1
+.o 2
+.type f
+.ilb  IN 
+.ob   LED1 LED2 
+.phase 11
+.p 2
+1 10
+0 01
+.e
