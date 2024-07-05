@@ -190,11 +190,11 @@ You can source it to set your current shell environment so that wine commands us
 $ . wine_atmel
 $ wine explorer
 ```
-or you can run it with arguments, and it will run those arguments in that environment without changing your current shell environment:
+or you can run it with arguments, and it will run those arguments in that environment without changing your current shell environment:  
 `$ wine_atmel explorer`
 
 ### cupl
-Runs `CUPL.EXE` in the wine_atmel environment. It's just a copy of https://github.com/peterzieba/5Vpld/blob/main/linux-workflow/5vcomp with wine_atmel at the top.
+Runs `CUPL.EXE` in the wine_atmel environment. It's just a copy of https://github.com/peterzieba/5Vpld/blob/main/linux-workflow/5vcomp with wine_atmel at the top.  
 `$ cupl leds.pld`
 
 ### atmisp
@@ -204,7 +204,7 @@ or by Quartus-II-13.0 then POF2JED
 
 ### oprg
 Runs openocd with options to use a FT232R or FT232H programmer to program a ATF150x target device with an SVF file.  
-You have to create the SVF file manually with ATMISP.
+You have to create the SVF file manually with ATMISP.  
 Usage, args in ay order:  
  2 | \*1502\* - ATF1502xxx  
  4 | \*1504\* - ATF1504xxx  
