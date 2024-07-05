@@ -39,7 +39,7 @@ A few small notes I'll add, following the linux recipe:
 Here is a start to finish install on Ubuntu in 2024.
 ```
 $ sudo dpkg --add-architecture i386
-$ sudo apt install wine wine32:i386 winetricks playonlinux innoextract openocd telnet
+$ sudo apt install wine wine32:i386 winetricks playonlinux innoextract openocd telnet unzip
 $ mkdir ~/atf150x
 $ cd ~/atf150x
 $ wget https://ww1.microchip.com/downloads/en/DeviceDoc/awincupl.exe.zip
