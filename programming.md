@@ -75,14 +75,12 @@ Now to use the stuff that was just installed...
 
 ## Hardware
 
-If using an FT232R module  
+**If using an FT232R module**  
 https://amazon.com/dp/B0CQVB6JFV  
 https://amazon.com/dp/B0BJKCSZZW  
 https://adafruit.com/product/284  
-
 Wiring:  
-FT232R - JTAG  
-- - - - - - -  
+**FT232R - JTAG**  
 TXD - TCK  
 RXD - TDI  
 RTS - TDO  
@@ -90,14 +88,12 @@ CTS - TMS
 GND - GND  
 
 
-If using an FT232H module  
+**If using an FT232H module**  
 https://adafruit.com/product/2264  
 https://amazon.com/dp/B07T9CPMHT  
-https://ftdichip.com/products/um232h
-
+https://ftdichip.com/products/um232h  
 Wiring:  
-FT232H - JTAG  
-- - - - - - -  
+**FT232H - JTAG**  
 AD0 - TCK  
 AD1 - TDI  
 AD2 - TDO  
