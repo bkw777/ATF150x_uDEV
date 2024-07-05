@@ -33,7 +33,8 @@ https://github.com/peterzieba/5Vpld?tab=readme-ov-file#5vcomp-the-cupl-compiler-
 A few small notes I'll add, following the linux recipe:
 * I used a fresh dedicated wineprefix path just for this, not the default `~/.wine`  
 * I made symlinks instead of copies of `fit150\*.exe`  
-* The directions show an innoextract command that extracts 5 files from the Prochip installer, but then the following directions only explicitly mention copying the 3 `fit\*.exe` files. You need to copy & overwrite all 5 extracted files.
+* The directions show an innoextract command that extracts 5 files from the Prochip installer, but then the directions after that only explicitly mention copying the 3 `fit\*.exe` files. You need to copy & overwrite all 5 extracted files.
+* After running the ATMISP installer, extract `ftd2xx.dll` from the ftdi driver installer bundled with ATMISP, and place in the same directory with `ATMISP7.exe`
 
 Here is a start to finish install on Ubuntu in 2024.
 ```
@@ -52,6 +53,7 @@ $ wine awincupl.exe
 $ echo Supply serial number 60008009 then exit
 $ wine "c:/wincupl/wincupl/wincupl.exe"
 $ wine ATMISP7_setup.exe
+$ unzip -j -d ${WINE_PREFIX}/drive_c/ATMISP7 ${WINE_PREFIX}/drive_c/ATMISP7/Driver/CDM21228_Setup.exe i386/ftd2xx.dll
 $ innoextract \
  -I app/Prochip/pldfit/aprim.lib \
  -I app/Prochip/pldfit/atmel.std \
