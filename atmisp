@@ -1,0 +1,5 @@
+#!/bin/sh
+# Wrapper to run ATMISP
+# Install in ~/.local/bin along with wine_atmel
+
+wine_atmel c:/atmisp7/atmisp.exe

@@ -1,0 +1,13 @@
+#!/bin/bash
+# Convenience script to load a specific WINEARCH & WINEPREFIX
+# install in ~/.local/bin
+
+# usage:
+# 	$ . wine_atmel		# to set the wine env in your current shell environment
+#	$ wine_atmel args...	# to run args... in the wine env
+#	$ wine_atmel explorer
+#	# wine_atmel "c:/path/to/file.exe" args...
+(($#)) || set -x
+export WINEARCH=win32 WINEPREFIX=~/.wine_atmel
+(($#)) || set +x
+(($#)) && wine "$@"

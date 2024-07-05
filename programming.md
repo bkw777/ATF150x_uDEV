@@ -161,7 +161,7 @@ $ openocd \
  -c shutdown
 ```
 
---------------------------------------------------------------------------
+----
 
 The device is now programmed with the code from `leds.pld`
 
@@ -172,3 +172,46 @@ Insert a wire in the breadboard at pin 21.
 Touch the other end of the wire to the vcc or gnd rails alternately.
 
 Both LEDs change state depending on whether pin 21 is high or low.
+
+----
+
+Some wrapper scripts for convenience:
+```
+$ install -m 755 wine_atmel ~/.local/bin
+$ install -m 755 cupl ~/.local/bin
+$ install -m 755 atmisp ~/.local/bin
+$ install -m 755 oprg ~/.local/bin
+```
+
+### wine_atmel
+Sets the WINEARCH & WINEPREFIX variables.  
+You can source it to set your current shell environment so that wine commands use that environment by default:
+```
+$ . wine_atmel
+$ wine explorer
+```
+or you can run it with arguments, and it will run those arguments in that environment without changing your current shell environment:
+`$ wine_atmel explorer`
+
+### cupl
+Runs `CUPL.EXE` in the wine_atmel environment. It's just a copy of https://github.com/peterzieba/5Vpld/blob/main/linux-workflow/5vcomp with wine_atmel at the top.
+`$ cupl leds.pld`
+
+### atmisp
+Runs ATMISP in the wine_atmel environment.  
+You need to have a JED file first, created by `cupl file.pld`  
+or by Quartus-II-13.0 then POF2JED
+
+### oprg
+Runs openocd with options to use a FT232R or FT232H programmer to program a ATF150x target device with an SVF file.  
+You have to create the SVF file manually with ATMISP.
+Usage, args in ay order:  
+ 2 | \*1502\* - ATF1502xxx  
+ 4 | \*1504\* - ATF1504xxx  
+ 5 | \*1508\* - ATF1508xxx  
+ r | ft232r - FT232R programmer  
+ h | ft232h - FT232H programmer  
+ \*.svf - SVF filename  
+`$ oprg r 2 leds.svf`  
+`$ oprg ft232h ATF1504ASL leds.svf`
+
