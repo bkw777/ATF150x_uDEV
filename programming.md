@@ -53,7 +53,7 @@ $ wine awincupl.exe
 $ echo Supply serial number 60008009 then exit
 $ wine "c:/wincupl/wincupl/wincupl.exe"
 $ wine ATMISP7_setup.exe
-$ unzip -j -d ${WINE_PREFIX}/drive_c/ATMISP7 ${WINE_PREFIX}/drive_c/ATMISP7/Driver/CDM21228_Setup.exe i386/ftd2xx.dll
+$ unzip -jd ${WINEPREFIX}/drive_c/ATMISP7 ${WINEPREFIX}/drive_c/ATMISP7/Driver/CDM21228_Setup.exe i386/ftd2xx.dll
 $ innoextract \
  -I app/Prochip/pldfit/aprim.lib \
  -I app/Prochip/pldfit/atmel.std \
