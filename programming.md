@@ -199,12 +199,9 @@ Runs `CUPL.EXE` in the wine_atmel environment. It's just a copy of https://githu
 
 ### atmisp
 Runs ATMISP in the wine_atmel environment.  
-You need to have a JED file first, created by `cupl file.pld`  
-or by Quartus-II-13.0 then POF2JED
 
 ### oprg
 Runs openocd with options to use a FT232R or FT232H programmer to program a ATF150x target device with an SVF file.  
-You have to create the SVF file manually with ATMISP.  
 Usage, args in ay order:  
  2 | \*1502\* - ATF1502xxx  
  4 | \*1504\* - ATF1504xxx  
