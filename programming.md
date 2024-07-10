@@ -16,11 +16,11 @@ If you use Windows and actually have a real ATDH1150USB programmer then you can 
 
 But ATMISP only supports that one programmer and today that is over $90, even though it doesn't do anything special, it's barely any different than a $3 usb-blaster clone inside. There are no clones like for Altera USB-Blaster, Xilinx Platform Cable USB, ST-LInk etc.
 
-And the WinCUPL gui is annoying and crashy, and doesn't do anything special. It's just a basic text editor and front-end to run `CUPL.EXE` which in turn runs `fit150\*.exe`. It's most useful feature is actually just the trivial device mnemonic lookup util to provide the special code name that corresponds to your part number to put on the `Device xxxx;` line in the header of your PLD source file.
+And the WinCUPL gui is annoying and crashy, and doesn't do anything special. It's just a basic text editor and front-end to run `CUPL.EXE` which in turn runs `fit150*.exe`. It's most useful feature is actually just the trivial device mnemonic lookup util to provide the special code name that corresponds to your part number to put on the `Device xxxx;` line in the header of your PLD source file.
 
 So it's more convenient today to:  
 * Write a [PLD file](CUPL/leds.pld) in whatever editor you like.  
-* Compile it to a JED file using a [script](https://github.com/peterzieba/5Vpld?tab=readme-ov-file#5vcomp-the-cupl-compiler--your-favorite-text-editor-or-ide-16v8-22v10-and-atf150x) that runs `cupl.exe` without the gui.  
+* Compile it to a JED file using a [script](https://github.com/peterzieba/5Vpld?tab=readme-ov-file#5vcomp-the-cupl-compiler--your-favorite-text-editor-or-ide-16v8-22v10-and-atf150x) that runs `CUPL.EXE` without the gui.  
 * Use ATMISP <!-- or [fuseconv.py](https://github.com/whitequark/prjbureau/blob/main/util/fuseconv.py) -->to convert the JED to SVF.  
 * Use any commmon [FT232R](https://amazon.com/dp/B0CQVB6JFV) or [FT232H](https://www.adafruit.com/product/2264) module and [openocd](https://openocd.org/) to program the device with the SVF.  
 
@@ -31,10 +31,10 @@ These 2 workflow recipes, one for linux and one for windows, do at least make it
 https://github.com/peterzieba/5Vpld?tab=readme-ov-file#5vcomp-the-cupl-compiler--your-favorite-text-editor-or-ide-16v8-22v10-and-atf150x
 
 A few small notes I'll add, following the linux recipe:
-* I used a fresh dedicated wineprefix path just for this, not the default `~/.wine`  
-* I made symlinks instead of copies of `fit150\*.exe`  
-* The directions show an innoextract command that extracts 5 files from the Prochip installer, but then the directions after that only explicitly mention copying the 3 `fit\*.exe` files. You need to copy & overwrite all 5 extracted files.
-* After running the ATMISP installer, extract `ftd2xx.dll` from the ftdi driver installer bundled with ATMISP, and place in the same directory with `ATMISP7.exe`
+* I used a fresh dedicated wineprefix path just for this, not the default `~/.wine`
+* I made symlinks instead of copies of `fit150*.exe`
+* The directions show an `innoextract` command that extracts 5 files from the Prochip installer, but then the directions after that only explicitly mention copying the 3 `fit*.exe` files. You need to copy & overwrite all 5 extracted files.
+* After running the ATMISP installer, extract `ftd2xx.dll` from the ftdi driver installer bundled with ATMISP, and place it in the same directory with `ATMISP7.exe`.
 
 Here is a start to finish install on Ubuntu in 2024.
 ```
