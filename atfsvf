@@ -3,8 +3,19 @@
 # with an SVF file using an FT232R or FT232H adapter.
 # https://github.com/bkw777/ATF150x_uDEV/blob/main/programming.md
 # Install in ~/.local/bin
-# usage: atfsvf <jtag_device> <target_device> <file.svf>
-#	# program leds.svf onto a ATF1502 using a FT232R module
+# usage: atfsvf jtag_device target_device file.svf
+#   jtag_device:
+#     r, ft232r		FT232R usb adapter
+#     h, ft232h		FT232H usb adapter
+#   target_device:
+#     2v, *1502*V*	ATF1502ASV(L)
+#     2,  *1502*	ATF1502AS(L)
+#     4v, *1504*V*	ATF1504ASV(L)
+#     4,  *1504*	ATF1504AS(L)
+#     8v, *1508*V*	ATF1508ASV(L)
+#     8,  *1508*	ATF1508AS(L)
+
+#	# program leds.svf onto a ATF1502ASL using a FT232R module
 #	$ atfsvf r 2 leds.svf
 # or
 #	$ atfsvf ft232r ATF1502ASL leds.svf
@@ -13,8 +24,11 @@ while (($#)) ;do
 	case "$1" in
 		r|ft232r) F='-f interface/ft232r.cfg' ;;
 		h|ft232h) F='-f interface/ftdi/um232h.cfg' ;;
+		2v|*1502*V*) ID=0x0151203f ;;
 		2|*1502*) ID=0x0150203f ;;
+		4v|*1504*V*) ID=0x0151403f ;;
 		4|*1504*) ID=0x0150403f ;;
+		8v|*1508*V*) ID=0x0151803f ;;
 		8|*1508*) ID=0x0150803f ;;
 		*.svf) SVF="$1" ;;
 		*) C+=" $1" ;;

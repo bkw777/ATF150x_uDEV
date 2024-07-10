@@ -143,11 +143,15 @@ Exit
 
 This should produce `leds.svf`
 
-You can also select
-JTAG Instruction: `Erase`
-JEDEC File: `erase_1502.svf`
 
-To generate an SVF file that just erases the chip back to factory settings.
+You can also generate an SVF file that just erases the chip back to factory state:
+Device Name: `ATF1504ASV`
+JTAG Instruction: `Erase`
+SVF File Name: `ERASE_1504ASV.svf`
+
+There are some pre-made ERASE_xxxx.svf files included.  
+ERASE_150\*AS.svf are for both AS and ASL devices.  
+ERASE_150\*ASV.svf are for both ASV and ASVL devices.  
 
 ## Program the device with the SVF
 
@@ -191,14 +195,34 @@ Runs `5vcomp` in the wine_atmel environment.
 ### atmisp
 Runs ATMISP in the wine_atmel environment.  
 
+The only commandline args atmisp supports are
+  filename.chn   - chain file that defines the type of target device, jtag operation, and jed file  
+  -l  - program the jed file without launching the gui
+
+Notably missing: the chain file does not include the  "write svf file" setting or svf filename,  
+and the -l option can not be used to write out an svf file. You must manually use the gui to generate an svf file.
+
 ### atfsvf
-Runs openocd with options to use a FT232R or FT232H programmer to program a ATF150x target device with an SVF file.  
-Usage, args in ay order:  
- 2 | \*1502\* - Program an ATF1502 device  
- 4 | \*1504\* - Program an ATF1504 device  
- 5 | \*1508\* - Program an ATF1508 device  
- r | ft232r - Use an FT232R module for JTAG  
- h | ft232h - Use an FT232H module for JTAG  
- \*.svf - SVF filename  
-`$ atfsvf r 2 leds.svf`  Use an FT232R to program an ATF1502  
-`$ atfsvf ft232h ATF1504ASL leds.svf`  Use an FT232H to program an ATF1504  
+Runs openocd with options to use a FT232R or FT232H usb-ttl module to program a ATF150x target device with an SVF file.  
+Usage: `atfsvf jtag_device target_device file.svf`  
+Example: `atfsvf ft232r ATF1502ASL leds.svf`
+
+jtag_device:  
+ ft232r  
+ ft232h
+
+target_device:  
+ ATF1502AS  
+ ATF1502ASL  
+ ATF1502ASV  
+ ATF1502ASVL  
+ ATF1504AS  
+ ATF1504ASL  
+ ATF1504ASV  
+ ATF1504ASVL  
+ ATF1508AS  
+ ATF1508ASL  
+ ATF1508ASV  
+ ATF1508ASVL
+
+
