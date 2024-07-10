@@ -191,8 +191,11 @@ or you can run it with arguments, and it will run those arguments in that enviro
 `$ wine_atmel cmd`
 `$ wine_atmel c:/atmisp7/atmisp.exe`
 
+### wincupl
+Runs `WinCUPL.EXE` (gui) in the wine_atmel environment.
+
 ### cupl
-Runs `5vcomp` in the wine_atmel environment.  
+Runs `CUPL.EXE` (no gui, via `5vcomp`) in the wine_atmel environment.  
 `$ cupl leds.pld`
 
 ### atmisp
