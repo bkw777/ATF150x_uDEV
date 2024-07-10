@@ -145,9 +145,9 @@ Exit
 This should produce `leds.svf`
 
 
-You can also generate an SVF file that just erases the chip back to factory state:
-Device Name: `ATF1504ASV`
-JTAG Instruction: `Erase`
+You can also generate an SVF file that just erases the chip back to factory state:  
+Device Name: `ATF1504ASV`  
+JTAG Instruction: `Erase`  
 SVF File Name: `ERASE_1504ASV.svf`
 
 There are some pre-made ERASE_xxxx.svf files included.  
