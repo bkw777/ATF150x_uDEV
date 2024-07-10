@@ -1,5 +1,6 @@
 #!/bin/sh
 # Wrapper to run ATMISP
+# https://github.com/bkw777/ATF150x_uDEV/blob/main/programming.md
 # Install in ~/.local/bin along with wine_atmel
 
 wine_atmel c:/atmisp7/atmisp.exe

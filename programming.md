@@ -66,7 +66,7 @@ $ cd ${WINEPREFIX}/drive_c/Wincupl/WinCupl/Fitters
 $ ln -sf fit1502.exe find1502.exe
 $ ln -sf fit1504.exe find1504.exe
 $ ln -sf fit1508.exe find1508.exe
-$ cd ~/.local/bin && wget https://github.com/peterzieba/5Vpld/raw/main/linux-workflow/5vcomp && chmod 755 5vcomp
+$ cd ~/.local/bin && wget https://github.com/peterzieba/5Vpld/raw/main/linux-workflow/5vcomp && chmod -v 755 5vcomp
 $ cd
 $ rm -rf ~/atf150x
 ```
@@ -194,7 +194,7 @@ or you can run it with arguments, and it will run those arguments in that enviro
 `$ wine_atmel explorer`
 
 ### cupl
-Runs `CUPL.EXE` in the wine_atmel environment. It's just a copy of https://github.com/peterzieba/5Vpld/blob/main/linux-workflow/5vcomp with wine_atmel at the top.  
+Runs `5vcomp` in the wine_atmel environment.  
 `$ cupl leds.pld`
 
 ### atmisp

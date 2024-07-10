@@ -1,6 +1,7 @@
 #!/bin/bash
 # Convenience script to load a specific WINEARCH & WINEPREFIX
-# install in ~/.local/bin
+# https://github.com/bkw777/ATF150x_uDEV/blob/main/programming.md
+# Install in ~/.local/bin
 
 # usage:
 # 	$ . wine_atmel		# to set the wine env in your current shell environment
