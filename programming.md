@@ -187,9 +187,9 @@ $ . wine_atmel
 $ wine explorer
 ```
 or you can run it with arguments, and it will run those arguments in that environment without changing your current shell environment:  
-`$ wine_atmel explorer`
-`$ wine_atmel cmd`
-`$ wine_atmel c:/atmisp7/atmisp.exe`
+`$ wine_atmel explorer`  
+`$ wine_atmel cmd`  
+`$ wine_atmel c:/atmisp7/atmisp.exe`  
 
 ### wincupl
 Runs `WinCUPL.EXE` (gui) in the wine_atmel environment.
