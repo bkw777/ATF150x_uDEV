@@ -34,7 +34,7 @@ A few small notes I'll add, following the linux recipe:
 * I used a fresh dedicated wineprefix path just for this, not the default `~/.wine`
 * I made symlinks instead of copies of `fit150*.exe`
 * The directions show an `innoextract` command that extracts 5 files from the Prochip installer, but then the directions after that only explicitly mention copying the 3 `fit*.exe` files. You need to copy & overwrite all 5 extracted files.
-* After running the ATMISP installer, extract `ftd2xx.dll` from the ftdi driver installer bundled with ATMISP, and place it in the same directory with `ATMISP7.exe`.
+* After running the ATMISP installer, extract `ftd2xx.dll` from the ftdi driver installer bundled with ATMISP, and place it in the same directory with `ATMISP.exe`.
 
 Here is a start to finish install on Ubuntu in 2024.
 ```
