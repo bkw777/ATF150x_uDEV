@@ -8,6 +8,6 @@
 #	$ wine_atmel explorer
 #	# wine_atmel "c:/path/to/file.exe" args...
 (($#)) || set -x
-export WINEARCH=win32 WINEPREFIX=~/.wine_atmel
+export WINEARCH=win32 WINEPREFIX=~/.wine_atmel WINEDEBUG="fixme-hid,fixme-ntdll,fixme-imm"
 (($#)) || set +x
 (($#)) && wine "$@"

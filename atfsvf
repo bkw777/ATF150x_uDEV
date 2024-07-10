@@ -1,9 +1,12 @@
 #!/bin/bash
-# Wrapper to run openocd to program an ATF150x device with an SVF file using an FT232R or FT232H adapter for JTAG.
+# Wrapper to run openocd to program an ATF150x device
+# with an SVF file using an FT232R or FT232H adapter.
 # Install in ~/.local/bin
-# usage:
+# usage: atfsvf <jtag_device> <target_device> <file.svf>
 #	# program leds.svf onto a ATF1502 using a FT232R module
-#	$ oprg r 2 leds.svf
+#	$ atfsvf r 2 leds.svf
+# or
+#	$ atfsvf ft232r ATF1502ASL leds.svf
 
 while (($#)) ;do
 	case "$1" in

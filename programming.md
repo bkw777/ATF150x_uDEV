@@ -180,7 +180,7 @@ Some wrapper scripts for convenience:
 $ install -m 755 wine_atmel ~/.local/bin
 $ install -m 755 cupl ~/.local/bin
 $ install -m 755 atmisp ~/.local/bin
-$ install -m 755 oprg ~/.local/bin
+$ install -m 755 atfsvf ~/.local/bin
 ```
 
 ### wine_atmel
@@ -200,15 +200,14 @@ Runs `CUPL.EXE` in the wine_atmel environment. It's just a copy of https://githu
 ### atmisp
 Runs ATMISP in the wine_atmel environment.  
 
-### oprg
+### atfsvf
 Runs openocd with options to use a FT232R or FT232H programmer to program a ATF150x target device with an SVF file.  
 Usage, args in ay order:  
- 2 | \*1502\* - ATF1502xxx  
- 4 | \*1504\* - ATF1504xxx  
- 5 | \*1508\* - ATF1508xxx  
- r | ft232r - FT232R programmer  
- h | ft232h - FT232H programmer  
+ 2 | \*1502\* - Program an ATF1502 device  
+ 4 | \*1504\* - Program an ATF1504 device  
+ 5 | \*1508\* - Program an ATF1508 device  
+ r | ft232r - Use an FT232R module for JTAG  
+ h | ft232h - Use an FT232H module for JTAG  
  \*.svf - SVF filename  
-`$ oprg r 2 leds.svf`  
-`$ oprg ft232h ATF1504ASL leds.svf`
-
+`$ atfsvf r 2 leds.svf`  Use an FT232R to program an ATF1502  
+`$ atfsvf ft232h ATF1504ASL leds.svf`  Use an FT232H to program an ATF1504  
