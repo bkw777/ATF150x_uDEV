@@ -66,12 +66,15 @@ $ cd ${WINEPREFIX}/drive_c/Wincupl/WinCupl/Fitters
 $ ln -sf fit1502.exe find1502.exe
 $ ln -sf fit1504.exe find1504.exe
 $ ln -sf fit1508.exe find1508.exe
-$ cd ~/.local/bin && wget https://github.com/peterzieba/5Vpld/raw/main/linux-workflow/5vcomp && chmod -v 755 5vcomp
+$ cd ~/.local/bin
+$ wget https://github.com/peterzieba/5Vpld/raw/main/linux-workflow/5vcomp && chmod -v 755 5vcomp
+$ wget https://raw.githubusercontent.com/bkw777/ATF150x_uDEV/main/wine_atmel && chmod -v 755 wine_atmel
+$ wget https://raw.githubusercontent.com/bkw777/ATF150x_uDEV/main/cupl && chmod -v 755 cupl
+$ wget https://raw.githubusercontent.com/bkw777/ATF150x_uDEV/main/atmisp && chmod -v 755 atmisp
+$ wget https://raw.githubusercontent.com/bkw777/ATF150x_uDEV/main/atfsvf && chmod -v 755 atfsvf
 $ cd
 $ rm -rf ~/atf150x
 ```
-
-Now to use the stuff that was just installed...
 
 ## Hardware
 
@@ -89,7 +92,7 @@ GND - GND
 
 
 **If using an FT232H module**  
-https://adafruit.com/product/2264  
++https://adafruit.com/product/2264  
 https://amazon.com/dp/B07T9CPMHT  
 https://ftdichip.com/products/um232h  
 Wiring:  
@@ -111,7 +114,7 @@ ASV/ASVL = 3V3
 $ mkdir leds
 $ cd leds
 $ wget https://github.com/bkw777/ATF150x_uDEV/raw/master/CUPL/leds.pld
-$ 5vcomp leds.pld
+$ cupl leds.pld
 ```
 
 You should now have a file `leds.jed`
@@ -120,8 +123,7 @@ You should now have a file `leds.jed`
 
 Run ATMISP:
 ```
-$ export WINEARCH=win32 WINEPREFIX=~/.wine_atmel
-$ wine "c:/atmisp7/atmisp.exe"
+$ atmisp
 ```
 
 File -> New  
@@ -139,26 +141,19 @@ Exit
 
 This should produce `leds.svf`
 
+You can also select
+JTAG Instruction: `Erase`
+JEDEC File: `erase_1502.svf`
+
+To generate an SVF file that just erases the chip back to factory settings.
+
+If programming fails because the JTAG pins have previously been programmed to be used for I/O, apply 12v through a 1-5k resistor to the OE1 pin during programming.  
+[ATF150x_uPRG](https://github.com/bkw777/ATF150x_uPRG) includes an option to output 12v on jtag pin 6, and ATF150x_uDEV includes an option to connect jtag pin 6 to OE1/VPP on the chip.
+
 ## Program the device with the SVF
 
-Use openocd to program the device with the SVF file.  
-
-The long command below assumes a FT232R usb adapter and a 1502 device.  
-
-If you have a FT232H module, change `-f interface/ft232r.cfg` to `-f interface/ftdi/um232h.cfg`  
-(those cfg files are part of the openocd install in /usr/share/openocd)
-
-If you have a 1504 chip, change `0x0150203f` to `0x0150403f`  
-If you have a 1508 chip, change `0x0150203f` to `0x0150803f`  
-
 ```
-$ openocd \
- -f interface/ft232r.cfg \
- -c "transport select jtag" \
- -c "jtag newtap tap0 tap -irlen 3 -expected-id 0x0150203f" \
- -c init \
- -c "svf leds.svf" \
- -c shutdown
+$ atfsvf ft232r ATF1502ASL leds.svf
 ```
 
 ----
@@ -175,13 +170,7 @@ Both LEDs change state depending on whether pin 21 is high or low.
 
 ----
 
-Some wrapper scripts for convenience:
-```
-$ install -m 755 wine_atmel ~/.local/bin
-$ install -m 755 cupl ~/.local/bin
-$ install -m 755 atmisp ~/.local/bin
-$ install -m 755 atfsvf ~/.local/bin
-```
+The wrapper scripts used above:
 
 ### wine_atmel
 Sets the WINEARCH & WINEPREFIX variables.  
