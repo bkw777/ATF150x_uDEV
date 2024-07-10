@@ -20,9 +20,9 @@ And the WinCUPL gui is annoying and crashy, and doesn't do anything special. It'
 
 So it's more convenient today to:  
 * Write a [PLD file](CUPL/leds.pld) in whatever editor you like.  
-* Compile it to a JED file using a [script](https://github.com/peterzieba/5Vpld?tab=readme-ov-file#5vcomp-the-cupl-compiler--your-favorite-text-editor-or-ide-16v8-22v10-and-atf150x) that runs cupl.exe without the gui.  
-* Use ATMISP or [fuseconv.py](https://github.com/whitequark/prjbureau/blob/main/util/fuseconv.py) to write a SVF file instead of directly programming the device.  
-* Use any commmon [FT232R](https://amazon.com/dp/B0CQVB6JFV) or [FT232H](https://www.adafruit.com/product/2264) module and [openocd](https://openocd.org/) to program the device from the SVF file.
+* Compile it to a JED file using a [script](https://github.com/peterzieba/5Vpld?tab=readme-ov-file#5vcomp-the-cupl-compiler--your-favorite-text-editor-or-ide-16v8-22v10-and-atf150x) that runs `cupl.exe` without the gui.  
+* Use ATMISP <!-- or [fuseconv.py](https://github.com/whitequark/prjbureau/blob/main/util/fuseconv.py) -->to convert the JED to SVF.  
+* Use any commmon [FT232R](https://amazon.com/dp/B0CQVB6JFV) or [FT232H](https://www.adafruit.com/product/2264) module and [openocd](https://openocd.org/) to program the device with the SVF.  
 
 
 ## Software Installation & Setup
