@@ -108,6 +108,8 @@ In either case, if the uDEV is NOT powered, then also connect VCC to VCC and set
 AS/ASL = 5V  
 ASV/ASVL = 3V3  
 
+Optionally, [ATF150x_uPRG](https://github.com/bkw777/ATF150x_uPRG) can be combined with a FT232H module to make a moew cinvenient ready-to-go ATF150x programmer that uses a plain polarized 10-pin IDC cable and can optionally supply 12v for VPP.
+
 ##  Compile a PLD source to JED
 
 ```
@@ -147,14 +149,14 @@ JEDEC File: `erase_1502.svf`
 
 To generate an SVF file that just erases the chip back to factory settings.
 
-If programming fails because the JTAG pins have previously been programmed to be used for I/O, apply 12v through a 1-5k resistor to the OE1 pin during programming.  
-[ATF150x_uPRG](https://github.com/bkw777/ATF150x_uPRG) includes an option to output 12v on jtag pin 6, and ATF150x_uDEV includes an option to connect jtag pin 6 to OE1/VPP on the chip.
-
 ## Program the device with the SVF
 
 ```
 $ atfsvf ft232r ATF1502ASL leds.svf
 ```
+
+If programming fails because the JTAG pins have previously been programmed to be used for I/O, apply 12v through a 1-5k resistor to the OE1 pin during programming.  
+[ATF150x_uPRG](https://github.com/bkw777/ATF150x_uPRG) includes an option to output 12v on jtag pin 6, and ATF150x_uDEV includes an option to connect jtag pin 6 to OE1/VPP on the chip.
 
 ----
 
