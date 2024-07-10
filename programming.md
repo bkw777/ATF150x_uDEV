@@ -70,6 +70,7 @@ $ cd ~/.local/bin
 $ wget https://github.com/peterzieba/5Vpld/raw/main/linux-workflow/5vcomp && chmod -v 755 5vcomp
 $ wget https://raw.githubusercontent.com/bkw777/ATF150x_uDEV/main/wine_atmel && chmod -v 755 wine_atmel
 $ wget https://raw.githubusercontent.com/bkw777/ATF150x_uDEV/main/cupl && chmod -v 755 cupl
+$ wget https://raw.githubusercontent.com/bkw777/ATF150x_uDEV/main/wincupl && chmod -v 755 wincupl
 $ wget https://raw.githubusercontent.com/bkw777/ATF150x_uDEV/main/atmisp && chmod -v 755 atmisp
 $ wget https://raw.githubusercontent.com/bkw777/ATF150x_uDEV/main/atfsvf && chmod -v 755 atfsvf
 $ cd
@@ -187,6 +188,8 @@ $ wine explorer
 ```
 or you can run it with arguments, and it will run those arguments in that environment without changing your current shell environment:  
 `$ wine_atmel explorer`
+`$ wine_atmel cmd`
+`$ wine_atmel c:/atmisp7/atmisp.exe`
 
 ### cupl
 Runs `5vcomp` in the wine_atmel environment.  
@@ -195,12 +198,16 @@ Runs `5vcomp` in the wine_atmel environment.
 ### atmisp
 Runs ATMISP in the wine_atmel environment.  
 
-The only commandline args atmisp supports are
-  filename.chn   - chain file that defines the type of target device, jtag operation, and jed file  
-  -l  - program the jed file without launching the gui
+The only commandline args atmisp supports are  
+`atmisp.exe [filename.chn] [-1]`
 
-Notably missing: the chain file does not include the  "write svf file" setting or svf filename,  
-and the -l option can not be used to write out an svf file. You must manually use the gui to generate an svf file.
+`filename.chn` - Chain file that defines the type of target device, jtag operation, and jed file.
+
+`-1` - Program the jed file without launching the gui.
+
+Notably missing: The chain file does not include the "write svf file" setting or svf filename,  
+so the -1 option can not be used to write out an svf file without the gui.  
+You must manually use the gui to generate an svf file.
 
 ### atfsvf
 Runs openocd with options to use a FT232R or FT232H usb-ttl module to program a ATF150x target device with an SVF file.  

@@ -3,4 +3,5 @@
 # https://github.com/bkw777/ATF150x_uDEV/blob/main/programming.md
 # Install in ~/.local/bin along with wine_atmel
 
-wine_atmel c:/atmisp7/atmisp.exe "$@"
+# start just makes the help buttons work
+wine_atmel start c:/atmisp7/atmisp.exe "$@"

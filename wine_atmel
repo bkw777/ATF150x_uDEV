@@ -8,7 +8,10 @@
 #	$ wine_atmel args...	# to run args... in the wine env
 #	$ wine_atmel explorer
 #	# wine_atmel "c:/path/to/file.exe" args...
-(($#)) || set -x
-export WINEARCH=win32 WINEPREFIX=~/.wine_atmel WINEDEBUG="fixme-hid,fixme-ntdll,fixme-imm"
-(($#)) || set +x
-(($#)) && wine "$@"
+
+# can't count on bash or use bashisms because of sourcing
+WINEARCH=win32
+WINEPREFIX=~/.wine_atmel
+WINEDEBUG="fixme-hid,fixme-ntdll,fixme-imm"
+export WINEARCH WINEPREFIX WINEDEBUG
+[ -z "$@" ] && { set |grep '^WINE' ; : ; } || wine "$@"

@@ -1,20 +1,21 @@
-Atmel ATF1502 Fitter Version 1918 ,running Sat Jun 29 12:59:31 2024
+Atmel ATF1502 Fitter Version 1918 ,running Wed Jul 10 14:27:00 2024
 
 
 
 
-fit1502 C:\USERS\BKW\DOCUMENTS\ATF15XX\LEDS\LEDS.tt2
+fit1502
+-i leds.tt2
 -CUPL 
 -dev P1502T44
 -JTAG ON
 
 ****** Initial fitting strategy and property ******
- Netlist_in_file = LEDS.tt2
- Netlist_out_file = LEDS.tt3
- Jedec_file = LEDS.jed
- Vector_file = LEDS.tmv
- verilog_file = LEDS.vt
- Log_file = LEDS.fit
+ Netlist_in_file = leds.tt2
+ Netlist_out_file = leds.tt3
+ Jedec_file = leds.jed
+ Vector_file = leds.tmv
+ verilog_file = leds.vt
+ Log_file = leds.fit
  Device_name = TQFP44
  Tech_name = ATF1502AS 
  Package_type = TQFP
@@ -119,7 +120,7 @@ IN,
 Multiplexer assignment for block B
 IN			(MC1	P)   : MUX 22		Ref (B29p)
 
-Creating JEDEC file C:\USERS\BKW\DOCUMENTS\ATF15XX\LEDS\LEDS.jed ...
+Creating JEDEC file leds.jed ...
 
 TQFP44 programmed logic:
 -----------------------------------
@@ -215,7 +216,7 @@ Total cascade used 		0
 Total input pins 			4
 Total output pins 		3
 Total Pts 				2
-Creating pla file C:\USERS\BKW\DOCUMENTS\ATF15XX\LEDS\LEDS.tt3 with 0 inputs 0 outputs, 0 pins 0 nodes and 0 pterms...
+Creating pla file leds.tt3 with 0 inputs 0 outputs, 0 pins 0 nodes and 0 pterms...
 
 ----------------  End fitter, Design FITS
 $Device TQFP44 fits; JTAG ON; Secure OFF

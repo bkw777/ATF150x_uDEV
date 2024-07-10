@@ -1,0 +1,6 @@
+#!/bin/sh
+# Wrapper to run WinCUPL
+# Install in ~/.local/bin along with wine_atmel
+
+# start just makes the help buttons work
+wine_atmel start c:/wincupl/wincupl/wincupl.exe "$@"

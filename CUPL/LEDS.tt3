@@ -1,6 +1,6 @@
 #$ TOOL CUPL Atmel 1502 1918
-#$ MODULE LEDS
-#$ JEDECFILE LEDS
+#$ MODULE leds
+#$ JEDECFILE leds
 #$ PINS 3 LED1:22 LED2:23 IN:21 
 #$ NODES 0 
 .type fr
