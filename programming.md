@@ -109,7 +109,7 @@ In either case, if the uDEV is NOT powered, then also connect VCC to VCC and set
 AS/ASL = 5V  
 ASV/ASVL = 3V3  
 
-Optionally, [ATF150x_uPRG](https://github.com/bkw777/ATF150x_uPRG) can be combined with a FT232H module to make a moew cinvenient ready-to-go ATF150x programmer that uses a plain polarized 10-pin IDC cable and can optionally supply 12v for VPP.
+Optionally, [ATF150x_uPRG](https://github.com/bkw777/ATF150x_uPRG) can be combined with an FT232H module to make an ATF150x programmer with matching jtag pinout and which can also supply 12v for VPP.
 
 ##  Compile a PLD source to JED
 
