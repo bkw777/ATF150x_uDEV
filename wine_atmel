@@ -14,4 +14,4 @@ WINEARCH=win32
 WINEPREFIX=~/.wine_atmel
 WINEDEBUG="fixme-hid,fixme-ntdll,fixme-imm"
 export WINEARCH WINEPREFIX WINEDEBUG
-[ -z "$@" ] && { set |grep '^WINE' ; : ; } || wine "$@"
+[ $# -eq 0 ] && { set |grep '^WINE' ; : ; } || exec wine "$@"
