@@ -93,7 +93,7 @@ GND - GND
 
 
 **If using an FT232H module**  
-+https://adafruit.com/product/2264  
+https://adafruit.com/product/2264  
 https://amazon.com/dp/B07T9CPMHT  
 https://ftdichip.com/products/um232h  
 Wiring:  
