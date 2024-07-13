@@ -68,11 +68,11 @@ $ ln -sf fit1504.exe find1504.exe
 $ ln -sf fit1508.exe find1508.exe
 $ cd ~/.local/bin
 $ wget https://github.com/peterzieba/5Vpld/raw/main/linux-workflow/5vcomp && chmod -v 755 5vcomp
-$ wget https://raw.githubusercontent.com/bkw777/ATF150x_uDEV/main/wine_atmel && chmod -v 755 wine_atmel
-$ wget https://raw.githubusercontent.com/bkw777/ATF150x_uDEV/main/cupl && chmod -v 755 cupl
-$ wget https://raw.githubusercontent.com/bkw777/ATF150x_uDEV/main/wincupl && chmod -v 755 wincupl
-$ wget https://raw.githubusercontent.com/bkw777/ATF150x_uDEV/main/atmisp && chmod -v 755 atmisp
-$ wget https://raw.githubusercontent.com/bkw777/ATF150x_uDEV/main/atfsvf && chmod -v 755 atfsvf
+$ wget https://raw.githubusercontent.com/bkw777/ATF150x_uDEV/main/bin/wine_atmel && chmod -v 755 wine_atmel
+$ wget https://raw.githubusercontent.com/bkw777/ATF150x_uDEV/main/bin/cupl && chmod -v 755 cupl
+$ wget https://raw.githubusercontent.com/bkw777/ATF150x_uDEV/main/bin/wincupl && chmod -v 755 wincupl
+$ wget https://raw.githubusercontent.com/bkw777/ATF150x_uDEV/main/bin/atmisp && chmod -v 755 atmisp
+$ wget https://raw.githubusercontent.com/bkw777/ATF150x_uDEV/main/bin/atfsvf && chmod -v 755 atfsvf
 $ cd
 $ rm -rf ~/atf150x
 ```
