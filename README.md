@@ -12,10 +12,9 @@ Tiny dev board for Atmel/Microchip ATF1502 & ATF1504 TQFP-44.
 
 For C1-C4 use anything from 220n to 1u.
 
-JTAG pin 6 may optionally be connected to IC pin 38 (OE1#/VPP) by a solder jumper.
-
-[bkw777/ATF150x_uPRG](https://github.com/bkw777/ATF150x_uPRG) has a matching JTAG-A+VPP option to supply the 12v VPP via JTAG pin 6.
-
+JTAG pin 6 may optionally be connected to IC pin 38 (OE1#/VPP) by a solder jumper.  
+[ATF150x_uPRG](https://github.com/bkw777/ATF150x_uPRG) has a matching option to output 12v (VPP) on JTAG pin 6.  
+This allows the programmer to override the chips current programming and force enable the JTAG pins.
 
 # Programming
 [Buckle Up!](programming.md)
