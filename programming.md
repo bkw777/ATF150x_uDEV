@@ -154,6 +154,10 @@ There are some pre-made ERASE_xxxx.svf files included.
 ERASE_150\*AS.svf are for both AS and ASL devices.  
 ERASE_150\*ASV.svf are for both ASV and ASVL devices.  
 
+WARNING: NEVER select `JTAG Instruction: Program/Verify/Secure` unless you never want to program the chip again.  
+Applying 12v to the VPP pin only overcomes the problem that the JTAG pins had been disabled by programming them for ordinary I/O, it does NOT clear the security bit. Once the security bit has been set, the chip can no longer be re-programmed by JTAG.  
+[There technically still is a way to erase the chip, including the security bit, by using the parallel programming mode instead of JTAG, but it's still a manufacturer secret.](https://www.eevblog.com/forum/fpga/programming-(non-jtag)-max7000-devices/)
+
 ## Program the device with the SVF
 
 ```
