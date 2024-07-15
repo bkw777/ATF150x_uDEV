@@ -36,7 +36,7 @@ A few small notes I'll add, following the linux recipe:
 * The directions show an `innoextract` command that extracts 5 files from the Prochip installer, but then the directions after that only explicitly mention copying the 3 `fit*.exe` files. You need to copy & overwrite all 5 extracted files.
 * After running the ATMISP installer, extract `ftd2xx.dll` from the ftdi driver installer bundled with ATMISP, and place it in the same directory with `ATMISP.exe`.
 
-Here is a start to finish install on Ubuntu in 2024.
+Here is a start to finish install on Ubuntu 23.10.
 ```
 $ sudo dpkg --add-architecture i386
 $ sudo apt install wine wine32:i386 winetricks playonlinux innoextract openocd telnet unzip
