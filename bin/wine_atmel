@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # Convenience script to load a specific WINEARCH & WINEPREFIX
 # https://github.com/bkw777/ATF150x_uDEV/blob/main/programming.md
 # Install in ~/.local/bin
@@ -9,9 +9,9 @@
 #	$ wine_atmel explorer
 #	# wine_atmel "c:/path/to/file.exe" args...
 
-# can't count on bash or use bashisms because of sourcing
+# no bashisms because we may be sourced
 WINEARCH=win32
 WINEPREFIX=~/.wine_atmel
-WINEDEBUG="fixme-hid,fixme-ntdll,fixme-imm"
+WINEDEBUG="fixme-all"
 export WINEARCH WINEPREFIX WINEDEBUG
 [ $# -eq 0 ] && { set |grep '^WINE' ; : ; } || exec wine "$@"

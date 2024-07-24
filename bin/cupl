@@ -3,8 +3,9 @@
 # https://github.com/bkw777/ATF150x_uDEV/blob/main/programming.md
 # Install in ~/.local/bin along with wine_atmel and 5vcomp
 
-# hide $@ from wine_atmel so it doesn't try to run wine itself
+# 5vcomp runs wine. We need to set the wine environment, not run 5vcomp in wine.
+# Hide $@ from wine_atmel so it doesn't try to run wine itself.
 ARGS="$@"
 shift $#
 . wine_atmel
-5vcomp "${ARGS}"
+exec 5vcomp "${ARGS}"
