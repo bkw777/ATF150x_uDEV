@@ -4,12 +4,16 @@
 References:  
 https://github.com/peterzieba/5Vpld?tab=readme-ov-file#old-approach-wincupl-16v8-22v10-and-atf150x  
 https://github.com/peterzieba/5Vpld/blob/main/PROGRAMMING.md#cpld-devices-atf1502-atf1504-atf1508  
+https://web.archive.org/web/20080923170048/http://www.altera.com/support/kdb/solutions/rd02212005_950.html
 
 There is no short answer, at least for the initial installation & setup.
 
+The following only describes the WINCUPL process.  
+There is also another process based on Quartus and POF2JED.
+
 Just for basic background reference, the normal process originally would have been:  
 * Install [WinCUPL and ATMISP](https://www.microchip.com/en-us/products/fpgas-and-plds/spld-cplds/pld-design-resources)  
-* In WinCUPL write a `file.pld` and compile it to create a `file.jed`  
+* In WinCUPL write a `file.pld` and compile it to create a `file.jed`
 * Use ATMISP to program `file.jed` to the device using a [ATDH1150USB](https://www.microchip.com/en-us/development-tool/atdh1150usb) programmer.
 
 If you use Windows and actually have a real ATDH1150USB programmer then you can still do that.
@@ -18,7 +22,7 @@ But ATMISP only supports that one programmer and today that is over $90, even th
 
 And the WinCUPL gui is annoying and crashy, and doesn't do anything special. It's just a basic text editor and front-end to run `CUPL.EXE` which in turn runs `fit150*.exe`. It's most useful feature is actually just the trivial device mnemonic lookup util to provide the special code name that corresponds to your part number to put on the `Device xxxx;` line in the header of your PLD source file.
 
-So it's more convenient today to:  
+So today it's more practical to:  
 * Write a [PLD file](CUPL/leds.pld) in whatever editor you like.  
 * Compile it to a JED file using a [script](https://github.com/peterzieba/5Vpld?tab=readme-ov-file#5vcomp-the-cupl-compiler--your-favorite-text-editor-or-ide-16v8-22v10-and-atf150x) that runs `CUPL.EXE` without the gui.  
 * Use ATMISP <!-- or [fuseconv.py](https://github.com/whitequark/prjbureau/blob/main/util/fuseconv.py) -->to convert the JED to SVF.  
