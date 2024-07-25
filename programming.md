@@ -85,7 +85,7 @@ $ rm -rf ~/atf150x
 
 **If using an FT232R module**  
 https://amazon.com/dp/B0CQVB6JFV  
-https://amazon.com/dp/B0BJKCSZZW  
+https://amazon.com/dp/B0BJKCSZZW [(note DTR-vs-RTS)](#DTR-vs-RTS)  
 https://adafruit.com/product/284  
 Wiring:  
 **FT232R - JTAG**  
@@ -94,6 +94,24 @@ RXD - TDI
 RTS - TDO  
 CTS - TMS  
 GND - GND  
+
+<!--
+  openocd extra config options in foo.cfg or as -c commands in the wrapper script
+  https://openocd.org/doc/html/Debug-Adapter-Configuration.html
+
+  To set the ftdi chip back to a sane state after programming
+  so that the kernel can re-attach and use the module for ordinary serial uart
+  without having to un-plug & re-plug
+  ft232r restore_serial 0x15
+
+  Many modules have DTR instead of RTS on the main pin header to support resetting mcus into bootloader by DTR.
+  example: https://amazon.com/dp/B0BJKCSZZW
+  RTS is normally used for TDO, so tell the driver to use the DTR pin for TDO
+  add the following to the atfsvf command line, including both the single and doub quotes: `'-c "ft232r tdo_num 4"'`
+  ex: `atfsvf ft323r ATF1504ASL rexbrd.svf '-c "ft232r tdo_num 4"'`
+  
+
+-->
 
 
 **If using an FT232H module**  
@@ -168,8 +186,28 @@ Applying 12v to the VPP pin only overcomes the problem that the JTAG pins had be
 $ atfsvf ft232r ATF1502ASL leds.svf
 ```
 
-If programming fails because the JTAG pins have previously been programmed to be used for I/O, apply 12v through a 1-5k resistor to the OE1 pin during programming.  
-[ATF150x_uPRG](https://github.com/bkw777/ATF150x_uPRG) includes an option to output 12v on jtag pin 6, and ATF150x_uDEV includes an option to connect jtag pin 6 to OE1/VPP on the chip.
+### DTR vs RTS
+Many usb-ttl modules like [this one](https://amazon.com/dp/B0BJKCSZZW) have DTR instead of RTS on the main pin header to support resetting microcontrollers into their bootloader by DTR.
+
+The missing RTS pin is normally used for TDO. To tell the ft232r driver in openocd to use the DTR pin for TDO, add `-c 'ft232r tdo_num 4'` to the end of the `atfsvf` command line.
+
+Example: `$ atfsvf ft232r ATF1502ASL leds.svf -c 'ft232r tdo_num 4'`
+
+reference:  
+"4" is the bit number for the DTR pin in the FT232R drivers GPIO register.  
+https://openocd.org/doc/html/Debug-Adapter-Configuration.html  
+Scroll down to "Interface Driver: ft232r"
+
+### VPP
+
+If the chip was programmed with code that uses any of the JTAG pins for general I/O, then the JTAG interface becomes disabled and the chip can not be reprogrammed any more.
+
+This can be overcome by applying 12v through a 2k2 resistor to the OE1 pin while programming.
+
+[ATF150x_uPRG](https://github.com/bkw777/ATF150x_uPRG) is a programmer that can supply 12v on jtag pin 6, and ATF150x_uDEV can connect OE1 to jtag pin 6.
+
+VPP does NOT overcome the security bit.  
+If the chip is ever programmed with the secure option in atmisp or pof2jed, then the chip can not be reprogrammed any more.
 
 ----
 

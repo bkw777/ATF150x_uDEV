@@ -1,24 +1,37 @@
 #!/bin/bash
-# Wrapper to run openocd to program an ATF150x device
-# with an SVF file using an FT232R or FT232H adapter.
-# https://github.com/bkw777/ATF150x_uDEV/blob/main/programming.md
-# Install in ~/.local/bin
-# usage: atfsvf jtag_device target_device file.svf
-#   jtag_device:
-#     r, ft232r		FT232R usb adapter
-#     h, ft232h		FT232H usb adapter
-#   target_device:
-#     2v, *1502*V*	ATF1502ASV(L)
-#     2,  *1502*	ATF1502AS(L)
-#     4v, *1504*V*	ATF1504ASV(L)
-#     4,  *1504*	ATF1504AS(L)
-#     8v, *1508*V*	ATF1508ASV(L)
-#     8,  *1508*	ATF1508AS(L)
+#h Wrapper to run openocd to program an ATF150x device
+#h with an SVF file using an FT232R or FT232H adapter.
+#h https://github.com/bkw777/ATF150x_uDEV/blob/main/programming.md
+#h Install in ~/.local/bin
+#h
+#h usage: atfsvf jtag_device target_device file.svf
+#h
+#h   jtag_device:
+#h     r, ft232r		FT232R usb adapter
+#h     h, ft232h		FT232H usb adapter
+#h
+#h   target_device:
+#h     2v, *1502*V*	ATF1502ASV(L)
+#h     2,  *1502*	ATF1502AS(L)
+#h     4v, *1504*V*	ATF1504ASV(L)
+#h     4,  *1504*	ATF1504AS(L)
+#h     8v, *1508*V*	ATF1508ASV(L)
+#h     8,  *1508*	ATF1508AS(L)
+#h 
+#h Example, to program leds.svf onto a ATF1502ASL using a FT232R module:
+#h	$ atfsvf r 2 leds.svf
+#h or
+#h	$ atfsvf ft232r ATF1502ASL leds.svf
+#h
+#h To feed extra openocd commands, append "-c 'command args...'"
+#h
+#h Example, to tell the ft232r driver that TDO is on the DTR pin:
+#h 	$ atfsvf ft232r ATF1504ASL rexbrd.svf -c 'ft232r tdo_num 4'
+#h
 
-#	# program leds.svf onto a ATF1502ASL using a FT232R module
-#	$ atfsvf r 2 leds.svf
-# or
-#	$ atfsvf ft232r ATF1502ASL leds.svf
+abrt () { grep '^#h' $0 >&2 ;exit 1 ; }
+
+unset F SVF ID C
 
 while (($#)) ;do
 	case "$1" in
@@ -31,14 +44,17 @@ while (($#)) ;do
 		8v|*1508*V*) ID=0x0151803f ;;
 		8|*1508*) ID=0x0150803f ;;
 		*.svf) SVF="$1" ;;
-		*) C+=" $1" ;;
+		-c) shift ;C+=(-c "$1") ;;
+		*) abrt ;;
 	esac
 	shift
 done
 
+[[ $F ]] && [[ $ID ]] && [[ $SVF ]] || abrt
+
 openocd \
  $F \
- $C \
+ "${C[@]}" \
  -c "transport select jtag" \
  -c "jtag newtap tap0 tap -irlen 3 -expected-id ${ID}" \
  -c init \
