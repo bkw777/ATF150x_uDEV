@@ -189,9 +189,12 @@ $ atfsvf ft232r ATF1502ASL leds.svf
 ### DTR vs RTS
 Many usb-ttl modules like [this one](https://amazon.com/dp/B0BJKCSZZW) have DTR instead of RTS on the main pin header to support resetting microcontrollers into their bootloader by DTR.
 
-The missing RTS pin is normally used for TDO. To tell the ft232r driver in openocd to use the DTR pin for TDO, add `-c 'ft232r tdo_num 4'` to the end of the `atfsvf` command line.
+The missing RTS pin is normally used for TDO.  
+To tell the ft232r driver in openocd to use the DTR pin for TDO,  
+add `-c 'ft232r tdo_num 4'` to the end of the `atfsvf` command line.
 
-Example: `$ atfsvf ft232r ATF1502ASL leds.svf -c 'ft232r tdo_num 4'`
+Example:  
+`$ atfsvf ft232r ATF1502ASL leds.svf -c 'ft232r tdo_num 4'`
 
 reference:  
 "4" is the bit number for the DTR pin in the FT232R drivers GPIO register.  
