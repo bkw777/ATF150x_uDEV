@@ -85,7 +85,7 @@ $ rm -rf ~/atf150x
 
 **If using an FT232R module**  
 https://amazon.com/dp/B0CQVB6JFV  
-https://amazon.com/dp/B0BJKCSZZW [(note DTR-vs-RTS)](#DTR-vs-RTS)  
+https://amazon.com/dp/B0BJKCSZZW  (see note about [DTR](#DTR-vs-RTS))  
 https://adafruit.com/product/284  
 Wiring:  
 **FT232R - JTAG**  
@@ -103,14 +103,6 @@ GND - GND
   so that the kernel can re-attach and use the module for ordinary serial uart
   without having to un-plug & re-plug
   ft232r restore_serial 0x15
-
-  Many modules have DTR instead of RTS on the main pin header to support resetting mcus into bootloader by DTR.
-  example: https://amazon.com/dp/B0BJKCSZZW
-  RTS is normally used for TDO, so tell the driver to use the DTR pin for TDO
-  add the following to the atfsvf command line, including both the single and doub quotes: `'-c "ft232r tdo_num 4"'`
-  ex: `atfsvf ft323r ATF1504ASL rexbrd.svf '-c "ft232r tdo_num 4"'`
-  
-
 -->
 
 
