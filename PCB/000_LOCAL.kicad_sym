@@ -1766,7 +1766,7 @@
 			)
 		)
 		(property "Value" "ATF150x-xAx44"
-			(at 1.27 24.892 0)
+			(at 5.08 24.892 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1959,9 +1959,9 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 0 -27.94 90)
-				(length 2.54) hide
+			(pin power_in line
+				(at -1.27 -27.94 90)
+				(length 2.54)
 				(name "GND"
 					(effects
 						(font
@@ -1977,10 +1977,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 0 25.4 270)
-				(length 2.54) hide
-				(name "VCC"
+			(pin power_in line
+				(at 1.27 25.4 270)
+				(length 2.54)
+				(name "VCCINT"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2121,9 +2121,9 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 0 -27.94 90)
-				(length 2.54) hide
+			(pin power_in line
+				(at 1.27 -27.94 90)
+				(length 2.54)
 				(name "GND"
 					(effects
 						(font
@@ -2211,10 +2211,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 0 25.4 270)
-				(length 2.54) hide
-				(name "VCC"
+			(pin power_in line
+				(at -1.27 25.4 270)
+				(length 2.54)
+				(name "VCCIO"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2355,9 +2355,9 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 0 -27.94 90)
-				(length 2.54) hide
+			(pin power_in line
+				(at 3.81 -27.94 90)
+				(length 2.54)
 				(name "GND"
 					(effects
 						(font
@@ -2428,7 +2428,7 @@
 				)
 			)
 			(pin power_in line
-				(at 0 -27.94 90)
+				(at -3.81 -27.94 90)
 				(length 2.54)
 				(name "GND"
 					(effects
@@ -2463,10 +2463,10 @@
 					)
 				)
 			)
-			(pin passive line
-				(at 0 25.4 270)
-				(length 2.54) hide
-				(name "VCC"
+			(pin power_in line
+				(at 3.81 25.4 270)
+				(length 2.54)
+				(name "VCCINT"
 					(effects
 						(font
 							(size 1.27 1.27)
@@ -2608,9 +2608,9 @@
 				)
 			)
 			(pin power_in line
-				(at 0 25.4 270)
+				(at -3.81 25.4 270)
 				(length 2.54)
-				(name "VCC"
+				(name "VCCIO"
 					(effects
 						(font
 							(size 1.27 1.27)
