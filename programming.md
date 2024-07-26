@@ -85,7 +85,7 @@ $ rm -rf ~/atf150x
 
 **If using an FT232R module**  
 https://amazon.com/dp/B0CQVB6JFV  
-https://amazon.com/dp/B0BJKCSZZW [(note DTR-vs-RTS)](#DTR-vs-RTS)  
+https://amazon.com/dp/B0BJKCSZZW  (see note about [DTR](#DTR-vs-RTS))  
 https://adafruit.com/product/284  
 Wiring:  
 **FT232R - JTAG**  
@@ -103,14 +103,6 @@ GND - GND
   so that the kernel can re-attach and use the module for ordinary serial uart
   without having to un-plug & re-plug
   ft232r restore_serial 0x15
-
-  Many modules have DTR instead of RTS on the main pin header to support resetting mcus into bootloader by DTR.
-  example: https://amazon.com/dp/B0BJKCSZZW
-  RTS is normally used for TDO, so tell the driver to use the DTR pin for TDO
-  add the following to the atfsvf command line, including both the single and doub quotes: `'-c "ft232r tdo_num 4"'`
-  ex: `atfsvf ft323r ATF1504ASL rexbrd.svf '-c "ft232r tdo_num 4"'`
-  
-
 -->
 
 
@@ -189,9 +181,12 @@ $ atfsvf ft232r ATF1502ASL leds.svf
 ### DTR vs RTS
 Many usb-ttl modules like [this one](https://amazon.com/dp/B0BJKCSZZW) have DTR instead of RTS on the main pin header to support resetting microcontrollers into their bootloader by DTR.
 
-The missing RTS pin is normally used for TDO. To tell the ft232r driver in openocd to use the DTR pin for TDO, add `-c 'ft232r tdo_num 4'` to the end of the `atfsvf` command line.
+The missing RTS pin is normally used for TDO.  
+To tell the ft232r driver in openocd to use the DTR pin for TDO,  
+add `-c 'ft232r tdo_num 4'` to the end of the `atfsvf` command line.
 
-Example: `$ atfsvf ft232r ATF1502ASL leds.svf -c 'ft232r tdo_num 4'`
+Example:  
+`$ atfsvf ft232r ATF1502ASL leds.svf -c 'ft232r tdo_num 4'`
 
 reference:  
 "4" is the bit number for the DTR pin in the FT232R drivers GPIO register.  
