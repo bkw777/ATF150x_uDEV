@@ -5359,7 +5359,6 @@
 	(symbol
 		(lib_id "Jumper:Jumper_2_Bridged")
 		(at 114.3 57.15 0)
-		(mirror y)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
