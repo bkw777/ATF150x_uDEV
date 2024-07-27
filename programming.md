@@ -206,15 +206,23 @@ If the chip is ever programmed with the secure option in atmisp or pof2jed, then
 
 ----
 
+# Test It
+
 The device is now programmed with the code from `leds.pld`
 
 Install the uDEV board in a breadboard and supply power to VCC & GND (or let the usb module supply power via the jtag connection)
 
+Connect pins 22 & 23 to leds through 10k resistors to gnd.
+PIN_22 -> LED>| -> 10K -> GND 
+PIN_23 -> LED>| -> 10K -> GND 
+
 Insert a wire in the breadboard at pin 21.
 
-Touch the other end of the wire to the vcc or gnd rails alternately.
+Touch the other end of the wire to vcc then gnd and back and repeat alternately.
 
 Both LEDs change state depending on whether pin 21 is high or low.
+
+This shows the trivial LEDS.PLD code is in effect.
 
 ----
 
