@@ -63,22 +63,6 @@
         [
           "courtyards_overlap|135311844|100329999|257c2961-d7ea-40ac-9b63-f6460952bdc3|cfc67390-db50-453e-8651-367ea812ab92",
           ""
-        ],
-        [
-          "silk_edge_clearance|115569999|104889999|5532b021-4404-4feb-8f35-481c62a0bf9c|6abeefd2-f92c-448f-92a9-92dc5bedc514",
-          ""
-        ],
-        [
-          "silk_edge_clearance|115569999|95769999|5532b021-4404-4feb-8f35-481c62a0bf9c|b3fbed8b-edaa-41f0-9a61-e06408c0f90d",
-          ""
-        ],
-        [
-          "silk_edge_clearance|115570003|92709999|5532b021-4404-4feb-8f35-481c62a0bf9c|c400056b-33dd-44b8-8b62-831e14b100fd",
-          ""
-        ],
-        [
-          "silk_edge_clearance|165099998|110490001|135aaa8c-5b45-4ba0-845d-62f77bcf35a9|181fe41a-d5b7-4dfa-b97a-3b85c8c7974a",
-          ""
         ]
       ],
       "meta": {
@@ -179,7 +163,7 @@
           "td_onpthpad": true,
           "td_onroundshapesonly": false,
           "td_onsmdpad": true,
-          "td_ontrackend": false,
+          "td_ontrackend": true,
           "td_onvia": true
         }
       ],

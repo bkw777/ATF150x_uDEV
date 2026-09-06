@@ -266,4 +266,16 @@
 		(uuid "72316742-96f7-4a35-936c-a0af78dac0e7")
 	)
 	(embedded_fonts no)
+	(model "${KIPRJMOD}/000_LOCAL.pretty/3d/SolderJumper_1.2x1.0.step"
+		(hide yes)
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 1 1 1)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )

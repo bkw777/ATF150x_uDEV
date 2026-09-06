@@ -1,7 +1,7 @@
 (footprint "LED_0805"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "LED SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal, (Body size source: https://docs.google.com/spreadsheets/d/1BsfQQcO9C6DZCsRaXUlFlo91Tg2WpOkGARC1WS5S8t0/edit?usp=sharing), generated with kicad-footprint-generator")
 	(tags "LED")
@@ -29,18 +29,6 @@
 			)
 		)
 	)
-	(property "Footprint" "LED_0805"
-		(at 0 1.778 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "5ff23f22-93c5-4b0c-b368-107779dd4f0f")
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
@@ -50,6 +38,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -62,6 +51,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -200,18 +190,19 @@
 	(pad "1" smd roundrect
 		(at -0.9375 0)
 		(size 0.975 1.4)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "1b93e654-ec11-4f3e-b338-e1eb7d65f3ac")
 	)
 	(pad "2" smd roundrect
 		(at 0.9375 0)
 		(size 0.975 1.4)
-		(layers "F.Cu" "F.Paste" "F.Mask")
+		(layers "F.Cu" "F.Mask" "F.Paste")
 		(roundrect_rratio 0.25)
 		(uuid "3ee78eb6-7330-4969-9c8c-cca05bb6f23e")
 	)
-	(model "${KIPRJMOD}/3d/LED_0805.step"
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/000_LOCAL.pretty/3d/LED_0805.step"
 		(offset
 			(xyz 0 0 0)
 		)

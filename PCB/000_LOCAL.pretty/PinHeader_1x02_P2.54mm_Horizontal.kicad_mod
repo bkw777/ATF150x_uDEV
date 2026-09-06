@@ -1,7 +1,7 @@
 (footprint "PinHeader_1x02_P2.54mm_Horizontal"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "Through hole angled pin header, 1x02, 2.54mm pitch, 6mm pin length, single row")
 	(tags "Through hole angled pin header THT 1x02 2.54mm single row")
@@ -23,19 +23,6 @@
 		(effects
 			(font
 				(size 1 1)
-				(thickness 0.15)
-			)
-		)
-	)
-	(property "Footprint" ""
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "ca2e5c3c-234d-45a9-a128-f1db80f2e6f7")
-		(effects
-			(font
-				(size 1.27 1.27)
 				(thickness 0.15)
 			)
 		)
@@ -454,7 +441,8 @@
 		(remove_unused_layers no)
 		(uuid "9ae28bc9-54e2-4739-b2f7-1cd4def6fa89")
 	)
-	(model "${KIPRJMOD}/3d/PinHeader_1x02_P2.54mm_Horizontal.wrl"
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/000_LOCAL.pretty/3d/PinHeader_1x02_P2.54mm_Horizontal.step"
 		(offset
 			(xyz 0 0 0)
 		)

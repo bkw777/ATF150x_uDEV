@@ -1,7 +1,7 @@
 (footprint "IDC-Header_2x05_P2.54mm_Vertical"
-	(version 20240108)
+	(version 20241229)
 	(generator "pcbnew")
-	(generator_version "8.0")
+	(generator_version "9.0")
 	(layer "F.Cu")
 	(descr "Through hole IDC box header, 2x05, 2.54mm pitch, DIN 41651 / IEC 60603-13, double rows, https://docs.google.com/spreadsheets/d/16SsEcesNF15N3Lb4niX7dcUr-NY5_MFPQhobNuNppn4/edit#gid=0")
 	(tags "Through hole vertical IDC box header THT 2x05 2.54mm double row")
@@ -27,18 +27,6 @@
 			)
 		)
 	)
-	(property "Footprint" "IDC-Header_2x05_P2.54mm_Vertical"
-		(at 0 0 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(hide yes)
-		(uuid "bbe43ec4-3e78-4f08-9a9d-87331dc91725")
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-	)
 	(property "Datasheet" ""
 		(at 0 0 0)
 		(unlocked yes)
@@ -48,6 +36,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -60,6 +49,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(thickness 0.15)
 			)
 		)
 	)
@@ -476,7 +466,8 @@
 		(remove_unused_layers no)
 		(uuid "9b999f4e-48b7-48e9-9916-ad90401c64fc")
 	)
-	(model "${KIPRJMOD}/3d/IDC-Header_2x05_P2.54mm_Vertical.step"
+	(embedded_fonts no)
+	(model "${KIPRJMOD}/000_LOCAL.pretty/3d/IDC-Header_2x05_P2.54mm_Vertical.step"
 		(offset
 			(xyz 0 0 0)
 		)
