@@ -11,6 +11,8 @@ Tiny dev board for Atmel/Microchip ATF1502 & ATF1504 TQFP-44.
 ![](PCB/out/ATF150x_uDEV.bottom.jpg)
 ![](PCB/out/ATF150x_uDEV.svg)
 
+[v014 PCB at OSHPark](https://oshpark.com/shared_projects/z46uyCad)
+
 For C1-C4 use anything from 0.22u to 1u.
 
 JTAG pin 6 may optionally be connected to IC pin 38 (OE1#/VPP) by the VPP solder jumper.  
