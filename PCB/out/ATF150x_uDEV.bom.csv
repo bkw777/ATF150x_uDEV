@@ -1,0 +1,8 @@
+"Reference","Value","Datasheet","Footprint","Qty","DNP"
+"C1,C2,C3,C4","1u","datasheets/MLCC_2512.pdf","000_LOCAL:C_0805","4",""
+"J1","Altera JTAG-A+VPP","datasheets/JTAG-A.pdf","000_LOCAL:IDC-Header_2x05_P2.54mm_Vertical","1",""
+"J2,J3","1x20x2.54mm","~","000_LOCAL:PinHeader_1x20_P2.54mm_Vertical","2",""
+"JP1","VCC","~","000_LOCAL:PinHeader_1x02_P2.54mm_Horizontal","1",""
+"LED1,LED2","GRN","datasheets/LG_R971.pdf","000_LOCAL:LED_0805","2",""
+"R1,R2","10k","datasheets/SEI-RMCF_RMCP.pdf","000_LOCAL:R_0805","2",""
+"U1","ATF150x-xAx44","datasheets/ATF1502AS.pdf","000_LOCAL:VQFP44","1",""

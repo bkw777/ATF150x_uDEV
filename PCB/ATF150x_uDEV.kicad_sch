@@ -1152,6 +1152,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "000_LOCAL:Jumper_2_Bridged"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "JP"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Jumper_2_Bridged"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Jumper, 2-pole, closed/bridged"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "Jumper SPST"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Jumper_2_Bridged_0_0"
+				(circle
+					(center -2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 2.032 0)
+					(radius 0.508)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Bridged_0_1"
+				(arc
+					(start -1.524 0.254)
+					(mid 0 0.762)
+					(end 1.524 0.254)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Jumper_2_Bridged_1_1"
+				(pin passive line
+					(at -5.08 0 0)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 2.54)
+					(name "B"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "000_LOCAL:SolderJumper_2_Open"
 			(pin_numbers
 				(hide yes)
@@ -2439,156 +2589,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Jumper:Jumper_2_Bridged"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim yes)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "JP"
-				(at 0 1.905 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Jumper_2_Bridged"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Jumper, 2-pole, closed/bridged"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "Jumper SPST"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Jumper_2_Bridged_0_0"
-				(circle
-					(center -2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.508)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Jumper_2_Bridged_0_1"
-				(arc
-					(start -1.524 0.254)
-					(mid 0 0.762)
-					(end 1.524 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Jumper_2_Bridged_1_1"
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "B"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -2848,17 +2848,21 @@
 		)
 		(uuid "e4f5d75f-5506-4272-b17f-419e15fee015")
 	)
+	(text "Additional BOM part, jumper for JP1, typical: Sullins SPC02SYAN"
+		(exclude_from_sim no)
+		(at 228.6 161.544 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "f8307ef1-e415-4ca6-994f-80c894c31e1c")
+	)
 	(junction
 		(at 118.11 63.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "10f29c69-635a-4a42-b1d3-569ef3c02793")
-	)
-	(junction
-		(at 88.9 153.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "11e459da-e5b1-40c3-9c09-37ca05af78cb")
 	)
 	(junction
 		(at 119.38 63.5)
@@ -2885,10 +2889,10 @@
 		(uuid "17521949-bd09-45ba-9aae-91e14fbe5c91")
 	)
 	(junction
-		(at 80.01 161.29)
+		(at 88.9 161.29)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "294d8fc6-ce13-4fc4-922f-1f35a2e63136")
+		(uuid "2266e8c3-de73-4f24-a844-f1bab08505d9")
 	)
 	(junction
 		(at 114.3 116.84)
@@ -2921,16 +2925,22 @@
 		(uuid "745e267c-2d6a-446b-a20e-1970b2191be5")
 	)
 	(junction
+		(at 80.01 161.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "893e09ac-30e8-46dc-9a47-16279c4eafcd")
+	)
+	(junction
 		(at 113.03 116.84)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9778179f-3b85-4036-9d0b-b67e2d9ffa5f")
 	)
 	(junction
-		(at 88.9 161.29)
+		(at 88.9 153.67)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "c60f7882-9222-470c-a7c5-01c12a7d6eb6")
+		(uuid "cf77f52e-98d9-4f55-914a-f77e8f4915a8")
 	)
 	(junction
 		(at 139.7 165.1)
@@ -3124,16 +3134,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 161.29) (xy 80.01 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6632ac6f-adc5-447d-9fa0-ffaf011b21f5")
-	)
-	(wire
-		(pts
 			(xy 119.38 63.5) (xy 144.78 63.5)
 		)
 		(stroke
@@ -3144,16 +3144,6 @@
 	)
 	(wire
 		(pts
-			(xy 80.01 161.29) (xy 88.9 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e486eaf-d567-4f61-a6d3-67c104802e6f")
-	)
-	(wire
-		(pts
 			(xy 118.11 63.5) (xy 119.38 63.5)
 		)
 		(stroke
@@ -3161,16 +3151,6 @@
 			(type default)
 		)
 		(uuid "715a8556-1cc2-4d03-ad5e-d314f31ece25")
-	)
-	(wire
-		(pts
-			(xy 88.9 161.29) (xy 97.79 161.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7210cf34-c301-471e-ba1b-6ff1367ed687")
 	)
 	(wire
 		(pts
@@ -3334,6 +3314,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 161.29) (xy 97.79 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af949ad1-bd48-4532-9339-91907226b936")
+	)
+	(wire
+		(pts
 			(xy 110.49 63.5) (xy 113.03 63.5)
 		)
 		(stroke
@@ -3361,6 +3351,16 @@
 			(type default)
 		)
 		(uuid "b8a6f504-af2c-4ae1-b6ac-e4d15edc233f")
+	)
+	(wire
+		(pts
+			(xy 71.12 161.29) (xy 80.01 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b96a3083-8afb-46e0-bbbf-6f3257dd0d05")
 	)
 	(wire
 		(pts
@@ -3531,6 +3531,16 @@
 			(type default)
 		)
 		(uuid "e719897e-f525-4a91-897c-543be0c682f7")
+	)
+	(wire
+		(pts
+			(xy 80.01 161.29) (xy 88.9 161.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e78ff38c-22cb-4cbf-a02a-14ea764f5572")
 	)
 	(wire
 		(pts
@@ -4037,7 +4047,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "CONN HEADER VERT 20POS 2.54MM"
+			(at 78.74 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PRPC020SAAN-RC"
 			(at 78.74 86.36 0)
 			(effects
 				(font
@@ -4107,131 +4126,9 @@
 			(uuid "4baf2f92-a4ae-48f6-bcbd-e201c9e02b8d")
 		)
 		(instances
-			(project "ATF1502AS_uDEV"
+			(project "ATF150x_uDEV"
 				(path "/59fc349f-54da-4a51-bb89-375ab443b404"
 					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_01x20")
-		(at 149.86 86.36 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005df22a50")
-		(property "Reference" "J3"
-			(at 149.86 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1x20x2.54mm"
-			(at 147.7772 60.2996 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "000_LOCAL:PinHeader_1x20_P2.54mm_Vertical"
-			(at 149.86 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 149.86 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 149.86 86.36 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "19"
-			(uuid "18668a0e-ed37-4614-a6c8-f6ccbb036d88")
-		)
-		(pin "2"
-			(uuid "9a8ee865-8776-45b5-b346-05c7ac1ea259")
-		)
-		(pin "16"
-			(uuid "11e458c7-f2bf-496e-999c-d4c83a7a6af4")
-		)
-		(pin "3"
-			(uuid "f66ad3bd-a4fc-4efc-aac7-b88077eedd57")
-		)
-		(pin "18"
-			(uuid "82170e3d-f789-4ba3-84b9-caf0e482eb29")
-		)
-		(pin "8"
-			(uuid "df89be55-dff0-474c-a73f-f6059f7c1c2e")
-		)
-		(pin "9"
-			(uuid "3efec38e-63d6-421e-abf9-3ca4c3cbd3e5")
-		)
-		(pin "13"
-			(uuid "f23e525b-07e0-4b71-9d22-02d2aa3e176e")
-		)
-		(pin "15"
-			(uuid "2c93c187-73e6-4238-8e1b-4f21afafd9e8")
-		)
-		(pin "5"
-			(uuid "90027a79-9985-4724-9fcb-6534d0db9251")
-		)
-		(pin "12"
-			(uuid "4c36be1b-e9ce-4534-991b-b21b8bd147c0")
-		)
-		(pin "20"
-			(uuid "9e53cc9f-6cd3-40b8-bad2-aa11b9d3e334")
-		)
-		(pin "6"
-			(uuid "dccbb3f4-6b35-4ef1-acb5-be17b9485111")
-		)
-		(pin "4"
-			(uuid "10d81955-405b-4c87-9f08-9910bbd51821")
-		)
-		(pin "10"
-			(uuid "b6df0865-605d-4af3-92c9-c9007fb0e2fc")
-		)
-		(pin "11"
-			(uuid "caf3e18c-a4b7-4b9d-b44d-49b657bd68ff")
-		)
-		(pin "17"
-			(uuid "24866353-e978-470d-84fa-5454199bd5ae")
-		)
-		(pin "14"
-			(uuid "81ac1b46-4d8e-49d3-a6a5-ee52cb96f86d")
-		)
-		(pin "1"
-			(uuid "4a0d5953-11ba-47b6-9f85-88865ff84c84")
-		)
-		(pin "7"
-			(uuid "5da80fab-0dda-487c-a63d-90d86b315d26")
-		)
-		(instances
-			(project "ATF1502AS_uDEV"
-				(path "/59fc349f-54da-4a51-bb89-375ab443b404"
-					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -4273,7 +4170,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "datasheets/MLCC_2512.pdf"
 			(at 71.12 157.48 0)
 			(effects
 				(font
@@ -4282,7 +4179,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "C 1u  16v X7R 0805"
+			(at 71.12 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21B105KOFNNWE"
 			(at 71.12 157.48 0)
 			(effects
 				(font
@@ -4298,7 +4204,7 @@
 			(uuid "fe6a0dc5-cb74-47ba-b1dd-76a655c99679")
 		)
 		(instances
-			(project "ATF1502AS_uDEV"
+			(project "ATF150x_uDEV"
 				(path "/59fc349f-54da-4a51-bb89-375ab443b404"
 					(reference "C1")
 					(unit 1)
@@ -4342,7 +4248,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "datasheets/SEI-RMCF_RMCP.pdf"
 			(at 133.35 151.13 0)
 			(effects
 				(font
@@ -4351,7 +4257,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "R 10K 0805"
+			(at 133.35 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RMCF0805FT10K0"
 			(at 133.35 151.13 0)
 			(effects
 				(font
@@ -4367,78 +4282,9 @@
 			(uuid "87b6e630-0e80-4937-85ce-30619ec9a9ea")
 		)
 		(instances
-			(project "ATF1502AS_uDEV"
+			(project "ATF150x_uDEV"
 				(path "/59fc349f-54da-4a51-bb89-375ab443b404"
 					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 146.05 151.13 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005df6af6a")
-		(property "Reference" "R2"
-			(at 147.828 149.9616 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10k"
-			(at 147.828 152.273 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "000_LOCAL:R_0805"
-			(at 144.272 151.13 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 146.05 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 146.05 151.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8c0935ef-3083-4106-bffb-9e14613acde9")
-		)
-		(pin "2"
-			(uuid "c42b1d92-45c5-498a-b144-fb0c6e80efde")
-		)
-		(instances
-			(project "ATF1502AS_uDEV"
-				(path "/59fc349f-54da-4a51-bb89-375ab443b404"
-					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -4481,7 +4327,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "datasheets/LG_R971.pdf"
 			(at 133.35 158.75 0)
 			(effects
 				(font
@@ -4490,7 +4336,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" ""
+		(property "Description" "Green LED 0805"
 			(at 133.35 158.75 0)
 			(effects
 				(font
@@ -4499,16 +4345,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "150060GS75000"
-			(at 133.35 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfg" "Wurth"
+		(property "MPN" "LG_R971-KN-1-0-20-R18"
 			(at 133.35 158.75 0)
 			(effects
 				(font
@@ -4524,166 +4361,9 @@
 			(uuid "2e8b00cf-ba35-4d14-af53-7f3b91369a99")
 		)
 		(instances
-			(project "ATF1502AS_uDEV"
+			(project "ATF150x_uDEV"
 				(path "/59fc349f-54da-4a51-bb89-375ab443b404"
 					(reference "LED1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 146.05 158.75 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "00000000-0000-0000-0000-00005df6d134")
-		(property "Reference" "LED2"
-			(at 147.32 158.75 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "GRN"
-			(at 148.59 162.56 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "000_LOCAL:LED_0805"
-			(at 146.05 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 146.05 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 146.05 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MPN" "150060GS75000"
-			(at 146.05 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Mfg" "Wurth"
-			(at 146.05 158.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "a7b3fa9b-c039-44d9-b65e-a542e9d09d3e")
-		)
-		(pin "2"
-			(uuid "b2621c92-8a0f-4363-b768-296f6aaf3bc1")
-		)
-		(instances
-			(project "ATF1502AS_uDEV"
-				(path "/59fc349f-54da-4a51-bb89-375ab443b404"
-					(reference "LED2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 80.01 157.48 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "062b632a-0034-4fb4-a039-ffafb6228a84")
-		(property "Reference" "C2"
-			(at 81.28 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1u"
-			(at 81.28 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "000_LOCAL:C_0805"
-			(at 80.9752 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 80.01 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 80.01 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "43b50a44-23c3-4f80-b743-f2c68d4541bc")
-		)
-		(pin "2"
-			(uuid "db862116-8225-4326-9047-e5d690cfa6b7")
-		)
-		(instances
-			(project "ATF1502AS_uDEV"
-				(path "/59fc349f-54da-4a51-bb89-375ab443b404"
-					(reference "C2")
 					(unit 1)
 				)
 			)
@@ -4747,7 +4427,7 @@
 			(uuid "7fd50682-b493-48a0-b0cd-1feea52dfd42")
 		)
 		(instances
-			(project "ATF1502AS_uDEV"
+			(project "ATF150x_uDEV"
 				(path "/59fc349f-54da-4a51-bb89-375ab443b404"
 					(reference "#PWR011")
 					(unit 1)
@@ -4813,7 +4493,7 @@
 			(uuid "381fe817-4246-43c4-acd7-b2d84addc2dd")
 		)
 		(instances
-			(project "ATF1502AS_uDEV"
+			(project "ATF150x_uDEV"
 				(path "/59fc349f-54da-4a51-bb89-375ab443b404"
 					(reference "#PWR08")
 					(unit 1)
@@ -4878,7 +4558,7 @@
 			(uuid "eaf1f550-1360-4f1c-a7bf-cad4f6461c0c")
 		)
 		(instances
-			(project ""
+			(project "ATF150x_uDEV"
 				(path "/59fc349f-54da-4a51-bb89-375ab443b404"
 					(reference "#PWR06")
 					(unit 1)
@@ -5082,75 +4762,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 88.9 157.48 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "365b0ed0-d762-429c-af55-bd0fb03e009b")
-		(property "Reference" "C3"
-			(at 90.17 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1u"
-			(at 90.17 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "000_LOCAL:C_0805"
-			(at 89.8652 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 88.9 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 88.9 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "433adb6f-4a1a-4630-baf3-aa40ba912d25")
-		)
-		(pin "2"
-			(uuid "17f015c1-a4be-42ff-9ac0-cd48fb0c304e")
-		)
-		(instances
-			(project "ATF1502AS_uDEV"
-				(path "/59fc349f-54da-4a51-bb89-375ab443b404"
-					(reference "C3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 214.63 93.98 0)
 		(unit 1)
@@ -5208,9 +4819,218 @@
 			(uuid "e6766b90-27c5-43e8-a5db-81e9656db6c1")
 		)
 		(instances
-			(project "ATF1502AS_uDEV"
+			(project "ATF150x_uDEV"
 				(path "/59fc349f-54da-4a51-bb89-375ab443b404"
 					(reference "#PWR01")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 88.9 157.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3ac6343c-b051-485a-8713-d8fc3d79d5a7")
+		(property "Reference" "C3"
+			(at 90.17 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 90.17 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "000_LOCAL:C_0805"
+			(at 89.8652 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheets/MLCC_2512.pdf"
+			(at 88.9 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "C 1u  16v X7R 0805"
+			(at 88.9 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21B105KOFNNWE"
+			(at 88.9 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1f3dfd57-f234-4fa8-b8e0-295ce73c74d6")
+		)
+		(pin "2"
+			(uuid "fa332eb6-93f6-4e44-8400-763e5ac444d4")
+		)
+		(instances
+			(project "ATF150x_uDEV"
+				(path "/59fc349f-54da-4a51-bb89-375ab443b404"
+					(reference "C3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x20")
+		(at 149.86 86.36 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3bd81750-c68d-4567-82cb-d2e10bde2929")
+		(property "Reference" "J3"
+			(at 149.86 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1x20x2.54mm"
+			(at 147.7772 115.1636 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "000_LOCAL:PinHeader_1x20_P2.54mm_Vertical"
+			(at 149.86 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 149.86 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "CONN HEADER VERT 20POS 2.54MM"
+			(at 149.86 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "PRPC020SAAN-RC"
+			(at 149.86 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "aa861515-e604-4991-ad02-4e150a143963")
+		)
+		(pin "6"
+			(uuid "d82adb5f-5820-47c8-a683-bfbdfe22a391")
+		)
+		(pin "9"
+			(uuid "cacccd30-4dae-463b-a00c-bd7a30e9b536")
+		)
+		(pin "19"
+			(uuid "ec4fb463-de5d-4685-a3e3-5b7deec77f51")
+		)
+		(pin "13"
+			(uuid "d2775158-db06-44f2-8b6b-5acf2480470c")
+		)
+		(pin "7"
+			(uuid "89005375-6507-4069-9af1-0a8bc86b9891")
+		)
+		(pin "12"
+			(uuid "869373c7-5b4f-475e-ab09-4ae475ca16a7")
+		)
+		(pin "18"
+			(uuid "1289c393-1cc3-42be-a75f-428f5137fed2")
+		)
+		(pin "20"
+			(uuid "1c576a50-6b1d-4051-9c4c-b0d0a000e565")
+		)
+		(pin "14"
+			(uuid "2c0d0b29-8bd3-4a86-99c0-0c8c92aedcc4")
+		)
+		(pin "16"
+			(uuid "fd98b851-9684-41ac-b00f-35ecc0086467")
+		)
+		(pin "4"
+			(uuid "05a87103-9036-4aca-bc56-b093e057a8b1")
+		)
+		(pin "8"
+			(uuid "72424608-4530-400d-aa17-1c9b8c7d553e")
+		)
+		(pin "3"
+			(uuid "63648e2d-24e0-4ee0-828d-c4eb4eb210bd")
+		)
+		(pin "11"
+			(uuid "78b166e1-0d0b-45d1-8892-b5a7d3fa982a")
+		)
+		(pin "1"
+			(uuid "f8d422d5-46e4-4e21-9d65-75d5865395e7")
+		)
+		(pin "5"
+			(uuid "366291ac-a465-4128-8f9b-82b50b9f4273")
+		)
+		(pin "17"
+			(uuid "59faf790-b943-4a35-aa25-59c6c5121b27")
+		)
+		(pin "10"
+			(uuid "6f8c1419-b010-417d-86d4-ec8b0e138216")
+		)
+		(pin "15"
+			(uuid "96c53df3-8605-415b-be2a-beb246412287")
+		)
+		(instances
+			(project "ATF150x_uDEV"
+				(path "/59fc349f-54da-4a51-bb89-375ab443b404"
+					(reference "J3")
 					(unit 1)
 				)
 			)
@@ -5342,7 +5162,7 @@
 			(uuid "b873854d-ad11-4eaa-8e7e-0242f8212cd1")
 		)
 		(instances
-			(project ""
+			(project "ATF150x_uDEV"
 				(path "/59fc349f-54da-4a51-bb89-375ab443b404"
 					(reference "#PWR04")
 					(unit 1)
@@ -5351,10 +5171,10 @@
 		)
 	)
 	(symbol
-		(lib_id "Jumper:Jumper_2_Bridged")
+		(lib_id "000_LOCAL:Jumper_2_Bridged")
 		(at 114.3 57.15 0)
 		(unit 1)
-		(exclude_from_sim yes)
+		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
@@ -5402,6 +5222,15 @@
 				(hide yes)
 			)
 		)
+		(property "MPN" "PRPC002SBBN-M71RC"
+			(at 114.3 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c151e40f-1c42-413d-8196-df2dcd7eeba8")
 		)
@@ -5409,7 +5238,7 @@
 			(uuid "2ab3c263-c3de-4d46-9846-f4d71fc0e678")
 		)
 		(instances
-			(project ""
+			(project "ATF150x_uDEV"
 				(path "/59fc349f-54da-4a51-bb89-375ab443b404"
 					(reference "JP1")
 					(unit 1)
@@ -5548,6 +5377,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 80.01 157.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "58459215-5d8d-4571-9ae5-4049de1744da")
+		(property "Reference" "C2"
+			(at 81.28 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 81.28 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "000_LOCAL:C_0805"
+			(at 80.9752 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheets/MLCC_2512.pdf"
+			(at 80.01 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "C 1u  16v X7R 0805"
+			(at 80.01 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21B105KOFNNWE"
+			(at 80.01 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c12eac3d-dbd3-46df-a4c4-2d9dfe7cb8c9")
+		)
+		(pin "2"
+			(uuid "4d92f0f1-5730-4d7e-a974-e95742e68d01")
+		)
+		(instances
+			(project "ATF150x_uDEV"
+				(path "/59fc349f-54da-4a51-bb89-375ab443b404"
+					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 139.7 167.64 0)
 		(unit 1)
@@ -5605,7 +5512,7 @@
 			(uuid "2b78d829-073c-4b88-a098-5d276e752047")
 		)
 		(instances
-			(project "ATF1502AS_uDEV"
+			(project "ATF150x_uDEV"
 				(path "/59fc349f-54da-4a51-bb89-375ab443b404"
 					(reference "#PWR09")
 					(unit 1)
@@ -5657,7 +5564,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Microchip CPLD, 32 Macrocell, 5 V, TQFP-44"
+		(property "Description" "IC CPLD 64MC 25NS 44TQFP"
+			(at 114.3 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "ATF1504ASL-25AU44"
 			(at 114.3 88.9 0)
 			(effects
 				(font
@@ -5799,7 +5715,7 @@
 			(uuid "14ab7160-1e69-4ab8-a2e3-c4ce89a37f01")
 		)
 		(instances
-			(project ""
+			(project "ATF150x_uDEV"
 				(path "/59fc349f-54da-4a51-bb89-375ab443b404"
 					(reference "U1")
 					(unit 1)
@@ -5851,7 +5767,16 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"
+		(property "Description" "CONN HEADER VERT 10POS 2.54MM"
+			(at 203.2 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "SBH11-PBPC-D05-ST-BK"
 			(at 203.2 88.9 0)
 			(effects
 				(font
@@ -5891,9 +5816,244 @@
 			(uuid "2bf313d0-e3da-43c6-b81c-9049c0aa6cf9")
 		)
 		(instances
-			(project ""
+			(project "ATF150x_uDEV"
 				(path "/59fc349f-54da-4a51-bb89-375ab443b404"
 					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 146.05 158.75 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8cbd4a79-2810-4d48-991c-fd133a22b06c")
+		(property "Reference" "LED2"
+			(at 147.32 158.75 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "GRN"
+			(at 148.59 162.56 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "000_LOCAL:LED_0805"
+			(at 146.05 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheets/LG_R971.pdf"
+			(at 146.05 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Green LED 0805"
+			(at 146.05 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "LG_R971-KN-1-0-20-R18"
+			(at 146.05 158.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a2ac2658-4cc0-4c43-8205-843a5d6de4aa")
+		)
+		(pin "2"
+			(uuid "020e372e-c04f-43bf-bd5e-c657c88b714a")
+		)
+		(instances
+			(project "ATF150x_uDEV"
+				(path "/59fc349f-54da-4a51-bb89-375ab443b404"
+					(reference "LED2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 97.79 157.48 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "a72dddd6-5a03-4242-8258-f253520acfab")
+		(property "Reference" "C4"
+			(at 99.06 154.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1u"
+			(at 99.06 160.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "000_LOCAL:C_0805"
+			(at 98.7552 161.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheets/MLCC_2512.pdf"
+			(at 97.79 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "C 1u  16v X7R 0805"
+			(at 97.79 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "CL21B105KOFNNWE"
+			(at 97.79 157.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d6d0a070-cad6-474a-a8d1-3966b42523ff")
+		)
+		(pin "2"
+			(uuid "15500050-bd15-42d6-8d5c-950f95b8f25a")
+		)
+		(instances
+			(project "ATF150x_uDEV"
+				(path "/59fc349f-54da-4a51-bb89-375ab443b404"
+					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 146.05 151.13 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "de386d40-62ad-49b4-9413-49acd45db189")
+		(property "Reference" "R2"
+			(at 147.828 149.9616 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 147.828 152.273 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "000_LOCAL:R_0805"
+			(at 144.272 151.13 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "datasheets/SEI-RMCF_RMCP.pdf"
+			(at 146.05 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "R 10K 0805"
+			(at 146.05 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RMCF0805FT10K0"
+			(at 146.05 151.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fcb4d90e-8a8f-4d28-9a9c-ccb80eaa4d88")
+		)
+		(pin "2"
+			(uuid "4a552e2f-76a5-4dd4-887b-96494d47d113")
+		)
+		(instances
+			(project "ATF150x_uDEV"
+				(path "/59fc349f-54da-4a51-bb89-375ab443b404"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -5957,7 +6117,7 @@
 			(uuid "b50f555d-93d5-4ebe-b603-ae4d13797b55")
 		)
 		(instances
-			(project "ATF1502AS_uDEV"
+			(project "ATF150x_uDEV"
 				(path "/59fc349f-54da-4a51-bb89-375ab443b404"
 					(reference "#PWR03")
 					(unit 1)
@@ -6023,78 +6183,9 @@
 			(uuid "6c249042-13b9-4471-b164-c7ef74486bd6")
 		)
 		(instances
-			(project "ATF1502AS_uDEV"
+			(project "ATF150x_uDEV"
 				(path "/59fc349f-54da-4a51-bb89-375ab443b404"
 					(reference "#PWR012")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 97.79 157.48 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f5366896-4b18-458e-8afb-6af8941fe5fa")
-		(property "Reference" "C4"
-			(at 99.06 154.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1u"
-			(at 99.06 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "000_LOCAL:C_0805"
-			(at 98.7552 161.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 97.79 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 97.79 157.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "10a91e8a-8730-4e3b-847d-8dd637af8a94")
-		)
-		(pin "2"
-			(uuid "b35aa366-6273-42dd-9fe3-4f98f5700d9c")
-		)
-		(instances
-			(project "ATF1502AS_uDEV"
-				(path "/59fc349f-54da-4a51-bb89-375ab443b404"
-					(reference "C4")
 					(unit 1)
 				)
 			)
