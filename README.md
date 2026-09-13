@@ -11,7 +11,7 @@ Tiny dev board for Atmel/Microchip ATF1502 & ATF1504 TQFP-44.
 ![](PCB/out/ATF150x_uDEV.bottom.jpg)
 ![](PCB/out/ATF150x_uDEV.svg)
 
-[v014 PCB at OSHPark](https://oshpark.com/shared_projects/z46uyCad)
+[v016 PCB at OSHPark](https://oshpark.com/shared_projects/1EtYH37r)
 
 For C1-C4 use anything from 0.22u to 1u.
 
